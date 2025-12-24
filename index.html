@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Минтай</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -32,7 +35,6 @@
       </div>
     </div>
 
-    <!-- MAIN HEADER (transparent) -->
     <div class="header-main">
       <div class="container">
         <div class="header-main__inner">
@@ -42,12 +44,12 @@
 
           <nav class="nav" aria-label="Меню">
             <ul class="nav-grid">
-              <li class="nav-item nav-item--c1r1"><a class="nav__link" href="#">ПОЛЬЗА</a></li>
-              <li class="nav-item nav-item--c2r1"><a class="nav__link" href="#">РЕЦЕПТЫ</a></li>
-              <li class="nav-item nav-item--c3r1"><a class="nav__link" href="#">ПРОДУКЦИЯ</a></li>
+              <li class="nav-item nav-item--a"><a class="nav__link" href="#">ПОЛЕЗНОСТЬ</a></li>
+              <li class="nav-item nav-item--b"><a class="nav__link" href="#">РЕЦЕПТЫ</a></li>
+              <li class="nav-item nav-item--c"><a class="nav__link" href="#">ПРОДУКЦИЯ</a></li>
 
-              <li class="nav-item nav-item--c1r2"><a class="nav__link" href="#">ФАКТЫ</a></li>
-              <li class="nav-item nav-item--c2r2"><a class="nav__link" href="#">ВЫСШАЯ ПРОБА</a></li>
+              <li class="nav-item nav-item--d"><a class="nav__link" href="#">ФАКТЫ</a></li>
+              <li class="nav-item nav-item--e"><a class="nav__link" href="#">ВЫСШАЯ ПРОБА</a></li>
             </ul>
           </nav>
         </div>
@@ -55,27 +57,140 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero__media">
-      <img class="hero__img" src="./images/banner-bg.png" alt="">
+      <img class="hero__img" id="heroBanner" src="./images/banner-bg.png" alt="">
     </div>
 
     <div class="hero__title">
-      <div class="hero__h1 hero__h1--top">С минтаем</div>
-      <div class="hero__h1 hero__h1--script">творить</div>
-      <div class="hero__h1 hero__h1--bottom">легко</div>
+      <img class="hero__h1img" src="./images/h1_img.png" alt="С минтаем творить легко">
     </div>
 
     <div class="hero__promo">
       <div class="container">
         <div class="hero__promo-inner">
-          <button class="hero__arrow" type="button" aria-label="Предыдущий">&lt;~</button>
-          <div class="hero__promo-text">ЭКОЛОГИЧНЫЙ ПРОМЫСЕЛ</div>
-          <button class="hero__arrow" type="button" aria-label="Следующий">~&gt;</button>
+          <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Предыдущий">
+            <img class="hero__arrow-img" src="./images/left_arrow.png" alt="">
+          </button>
+
+          <div class="hero__promo-text js-hero-slide-title">СОКРОВИЩЕ ДАЛЬНЕВОСТОЧНЫХ МОРЕЙ</div>
+
+          <button class="hero__arrow hero__arrow--next" type="button" aria-label="Следующий">
+            <img class="hero__arrow-img" src="./images/right_arrow.png" alt="">
+          </button>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="swiper about-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- SLIDE 1 -->
+          <div class="swiper-slide" data-title="СОКРОВИЩЕ ДАЛЬНЕВОСТОЧНЫХ МОРЕЙ" data-image="./images/banner-bg.png">
+            <div class="about__card">
+              <div class="about__row">
+                <div class="b-text">
+                  Мы&nbsp;хотим, чтобы вы&nbsp;распробовали и&nbsp;полюбили Дальневосточный Минтай, потому что сами любим его всей душой. Питаться здоровой и&nbsp;экологически чистой пищей, произведенной в&nbsp;родных краях, сегодня как никогда актуально. Именно поэтому интерес к&nbsp;Дальневосточному Минтаю переживает свое второе рождение
+                </div>
+
+                <div class="b-text">
+                  Камчатка, Сахалин, Курильские острова, просторы Охотского и&nbsp;Берингова морей&nbsp;— труднодоступные и&nbsp;диковинные края. Здесь соленые волны бьются о&nbsp;скалы из&nbsp;застывшей лавы, земля дышит огнем, а&nbsp;воздух пахнет йодом и&nbsp;ламинарией. Мощная энергия дикой природы чувствуется кожей, а&nbsp;от&nbsp;ее&nbsp;красоты и&nbsp;щедрости перехватывает дыхание. Именно там, в&nbsp;чистых холодных водах северо-западной части Тихого океана, обитает Минтай&nbsp;— белое золото дальневосточных морей
+                </div>
+
+                <div class="b-text"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-title="ЧИСТЫЙ ДАР ОКЕАНА" data-image="./images/banner-bg.png">
+            <div class="about__card">
+              <div class="about__row">
+                <div class="b-text">
+                  Основную часть жизни Дальневосточный Минтай проводит вдали от&nbsp;берега северной части Тихого океана, где природа почти не&nbsp;тронута человеком. В&nbsp;этих водах нет ртути, тяжелых металлов и&nbsp;микропластика. Это делает Дальневосточный Минтай экологически чистым. Дикая рыба не&nbsp;такая жирная, как фермерская аквакультура, она не&nbsp;проходит лечение антибиотиками и&nbsp;сохраняет максимум полезных свойств
+                </div>
+
+                <div class="b-text">
+                  Дальневосточным Минтаем делится с&nbsp;нами сама природа. Минтай нерестится и&nbsp;нагуливается в&nbsp;холодных водах. Легко приспосабливается к&nbsp;жизни на&nbsp;разной глубине, совершая как вертикальные миграции на&nbsp;глубину до&nbsp;700&nbsp;м, так и&nbsp;прекрасно себя чувствуя в&nbsp;поверхностном слое воды
+                </div>
+
+                <div class="b-text"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-title="ЗАГОЛОВОК 3" data-image="./images/banner-bg.png">
+            <div class="about__card">
+              <div class="about__row">
+                <div class="b-text"></div>
+                <div class="b-text"></div>
+                <div class="b-text"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-title="ЗАГОЛОВОК 4" data-image="./images/banner-bg.png">
+            <div class="about__card">
+              <div class="about__row">
+                <div class="b-text"></div>
+                <div class="b-text"></div>
+                <div class="b-text"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-title="ЗАГОЛОВОК 5" data-image="./images/banner-bg.png">
+            <div class="about__card">
+              <div class="about__row">
+                <div class="b-text"></div>
+                <div class="b-text"></div>
+                <div class="b-text"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const titleEl = document.querySelector(".js-hero-slide-title");
+      const heroImg = document.getElementById("heroBanner");
+
+      const swiper = new Swiper(".about-swiper", {
+        slidesPerView: 1,
+        speed: 450,
+        loop: false,
+
+        navigation: {
+          prevEl: ".hero__arrow--prev",
+          nextEl: ".hero__arrow--next",
+        },
+
+        pagination: {
+          el: ".about-pagination",
+          clickable: true,
+        },
+      });
+
+      function sync() {
+        const slide = swiper.slides[swiper.activeIndex];
+        const t = slide ? slide.getAttribute("data-title") : "";
+        const img = slide ? slide.getAttribute("data-image") : "";
+
+        if (titleEl) titleEl.textContent = t || "";
+        if (heroImg && img) heroImg.src = img;
+      }
+
+      sync();
+      swiper.on("slideChange", sync);
+    });
+  </script>
 </body>
 </html>
