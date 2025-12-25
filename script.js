@@ -103,7 +103,7 @@ const productsSwiper = new Swiper(".products-swiper", {
 });
 
 (function () {
-  const SPEED = 16; // чем меньше — тем быстрее печатает
+  const SPEED = 16;
 
   function startTyping(card) {
     const box = card.querySelector(".typewriter__text");
@@ -113,7 +113,6 @@ const productsSwiper = new Swiper(".products-swiper", {
     const textB = card.getAttribute("data-ing") || "";
     const full = (textA + "\n\n" + textB).trim();
 
-    // стоп старого таймера
     stopTyping(card);
 
     box.textContent = "";
@@ -140,7 +139,7 @@ const productsSwiper = new Swiper(".products-swiper", {
     card.addEventListener("mouseleave", () => {
       stopTyping(card);
       const box = card.querySelector(".typewriter__text");
-      if (box) box.textContent = ""; // чтобы заново печаталось при следующем наведении
+      if (box) box.textContent = "";
     });
   });
 })();
