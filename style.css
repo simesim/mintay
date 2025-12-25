@@ -501,3 +501,24 @@ img{
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.video-block{
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.video-block__box{
+  width: 1920px;        
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-block__video{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
