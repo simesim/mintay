@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Минтай</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
-
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <header class="site-header">
-    <!-- TOP BAR -->
     <div class="header-top">
       <div class="container">
         <div class="header-top__inner">
@@ -21,15 +20,22 @@
 
             <div class="header-top__social">
               <a class="social-link" href="#" aria-label="Telegram">
-                <img src="./images/telegram.png" alt="Telegram" width="26" height="26">
+                <div class="icon-box">
+                  <img src="./images/telegram.png" alt="Telegram">
+                </div>
               </a>
               <a class="social-link" href="#" aria-label="VK">
-                <img src="./images/VK.png" alt="VK" width="26" height="26">
+                <div class="icon-box">
+                  <img src="./images/VK.png" alt="VK">
+                </div>
               </a>
               <a class="social-link" href="#" aria-label="OK">
-                <img src="./images/odnok.png" alt="OK" width="26" height="26">
+                <div class="icon-box">
+                  <img src="./images/odnok.png" alt="OK">
+                </div>
               </a>
             </div>
+
           </div>
         </div>
       </div>
@@ -39,44 +45,63 @@
       <div class="container">
         <div class="header-main__inner">
           <a class="logo" href="./index.html" aria-label="На главную">
-            <img src="./images/logo.png" alt="Минтай" width="150" height="70">
+            <div class="logo-box">
+              <img src="./images/logo.png" alt="Минтай">
+            </div>
           </a>
 
           <nav class="nav" aria-label="Меню">
-            <ul class="nav-grid">
-              <li class="nav-item nav-item--a"><a class="nav__link" href="#">ПОЛЕЗНОСТЬ</a></li>
-              <li class="nav-item nav-item--b"><a class="nav__link" href="#">РЕЦЕПТЫ</a></li>
-              <li class="nav-item nav-item--c"><a class="nav__link" href="#">ПРОДУКЦИЯ</a></li>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav__link" href="#">ПОЛЕЗНОСТЬ</a>
+              </li>
 
-              <li class="nav-item nav-item--d"><a class="nav__link" href="#">ФАКТЫ</a></li>
-              <li class="nav-item nav-item--e"><a class="nav__link" href="#">ВЫСШАЯ ПРОБА</a></li>
+              <li class="nav-item">
+                <a class="nav__link" href="#">РЕЦЕПТЫ</a>
+              </li>
+
+              <li class="nav-item nav-item--dropdown">
+                <button class="nav__link nav__btn" type="button" aria-haspopup="true" aria-expanded="false">
+                  ПРОДУКЦИЯ
+                </button>
+
+
+                <div class="nav-drop" aria-label="Подменю Продукция">
+                  <a class="nav-drop__link" href="#">ФАКТЫ</a>
+                  <a class="nav-drop__link" href="#">ВЫСШАЯ ПРОБА</a>
+                </div>
+              </li>
             </ul>
           </nav>
+
         </div>
       </div>
     </div>
   </header>
-
   <section class="hero">
-    <div class="hero__media">
-      <img class="hero__img" id="heroBanner" src="./images/banner-bg.png" alt="">
-    </div>
+    <div class="hero__media" id="heroBanner"></div>
 
     <div class="hero__title">
-      <img class="hero__h1img" src="./images/h1_img.png" alt="С минтаем творить легко">
+      <div class="h1-box">
+        <img src="./images/h1_img.png" alt="С минтаем творить легко">
+      </div>
     </div>
 
     <div class="hero__promo">
       <div class="container">
         <div class="hero__promo-inner">
           <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Предыдущий">
-            <img class="hero__arrow-img" src="./images/left_arrow.png" alt="">
+            <div class="arrow-box">
+              <img src="./images/left_arrow.png" alt="">
+            </div>
           </button>
 
           <div class="hero__promo-text js-hero-slide-title">СОКРОВИЩЕ ДАЛЬНЕВОСТОЧНЫХ МОРЕЙ</div>
 
           <button class="hero__arrow hero__arrow--next" type="button" aria-label="Следующий">
-            <img class="hero__arrow-img" src="./images/right_arrow.png" alt="">
+            <div class="arrow-box">
+              <img src="./images/right_arrow.png" alt="">
+            </div>
           </button>
         </div>
       </div>
@@ -88,19 +113,27 @@
       <div class="swiper about-swiper">
         <div class="swiper-wrapper">
 
-          <!-- SLIDE 1 -->
           <div class="swiper-slide" data-title="СОКРОВИЩЕ ДАЛЬНЕВОСТОЧНЫХ МОРЕЙ" data-image="./images/banner-bg.png">
             <div class="about__card">
               <div class="about__row">
                 <div class="b-text">
-                  Мы&nbsp;хотим, чтобы вы&nbsp;распробовали и&nbsp;полюбили Дальневосточный Минтай, потому что сами любим его всей душой. Питаться здоровой и&nbsp;экологически чистой пищей, произведенной в&nbsp;родных краях, сегодня как никогда актуально. Именно поэтому интерес к&nbsp;Дальневосточному Минтаю переживает свое второе рождение
+                  Мы&nbsp;хотим, чтобы вы&nbsp;распробовали и&nbsp;полюбили Дальневосточный Минтай, потому что сами
+                  любим его всей душой. Питаться здоровой и&nbsp;экологически чистой пищей, произведенной в&nbsp;родных
+                  краях, сегодня как никогда актуально. Именно поэтому интерес к&nbsp;Дальневосточному Минтаю переживает
+                  свое второе рождение
                 </div>
 
                 <div class="b-text">
-                  Камчатка, Сахалин, Курильские острова, просторы Охотского и&nbsp;Берингова морей&nbsp;— труднодоступные и&nbsp;диковинные края. Здесь соленые волны бьются о&nbsp;скалы из&nbsp;застывшей лавы, земля дышит огнем, а&nbsp;воздух пахнет йодом и&nbsp;ламинарией. Мощная энергия дикой природы чувствуется кожей, а&nbsp;от&nbsp;ее&nbsp;красоты и&nbsp;щедрости перехватывает дыхание. Именно там, в&nbsp;чистых холодных водах северо-западной части Тихого океана, обитает Минтай&nbsp;— белое золото дальневосточных морей
+                  Камчатка, Сахалин, Курильские острова, просторы Охотского и&nbsp;Берингова морей&nbsp;—
+                  труднодоступные и&nbsp;диковинные края. Здесь соленые волны бьются о&nbsp;скалы из&nbsp;застывшей
+                  лавы, земля дышит огнем, а&nbsp;воздух пахнет йодом и&nbsp;ламинарией.
                 </div>
 
-                <div class="b-text"></div>
+                <div class="b-text">
+                  Мощная энергия дикой природы чувствуется кожей, а&nbsp;от&nbsp;ее&nbsp;красоты и&nbsp;щедрости
+                  перехватывает дыхание. Именно там, в&nbsp;чистых холодных водах северо-западной части Тихого океана,
+                  обитает Минтай&nbsp;— белое золото дальневосточных морей
+                </div>
               </div>
             </div>
           </div>
@@ -109,17 +142,26 @@
             <div class="about__card">
               <div class="about__row">
                 <div class="b-text">
-                  Основную часть жизни Дальневосточный Минтай проводит вдали от&nbsp;берега северной части Тихого океана, где природа почти не&nbsp;тронута человеком. В&nbsp;этих водах нет ртути, тяжелых металлов и&nbsp;микропластика. Это делает Дальневосточный Минтай экологически чистым. Дикая рыба не&nbsp;такая жирная, как фермерская аквакультура, она не&nbsp;проходит лечение антибиотиками и&nbsp;сохраняет максимум полезных свойств
+                  Основную часть жизни Дальневосточный Минтай проводит вдали от&nbsp;берега северной части Тихого
+                  океана, где природа почти не&nbsp;тронута человеком.
                 </div>
 
                 <div class="b-text">
-                  Дальневосточным Минтаем делится с&nbsp;нами сама природа. Минтай нерестится и&nbsp;нагуливается в&nbsp;холодных водах. Легко приспосабливается к&nbsp;жизни на&nbsp;разной глубине, совершая как вертикальные миграции на&nbsp;глубину до&nbsp;700&nbsp;м, так и&nbsp;прекрасно себя чувствуя в&nbsp;поверхностном слое воды
+                  В&nbsp;этих водах нет ртути, тяжелых металлов и&nbsp;микропластика. Это делает Дальневосточный Минтай
+                  экологически чистым. Дикая рыба не&nbsp;такая жирная, как фермерская аквакультура, она
+                  не&nbsp;проходит лечение антибиотиками и&nbsp;сохраняет максимум полезных свойств
                 </div>
 
-                <div class="b-text"></div>
+                <div class="b-text">
+                  Дальневосточным Минтаем делится с&nbsp;нами сама природа. Минтай нерестится и&nbsp;нагуливается
+                  в&nbsp;холодных водах. Легко приспосабливается к&nbsp;жизни на&nbsp;разной глубине, совершая как
+                  вертикальные миграции на&nbsp;глубину до&nbsp;700&nbsp;м, так и&nbsp;прекрасно себя чувствуя
+                  в&nbsp;поверхностном слое воды
+                </div>
               </div>
             </div>
           </div>
+
           <div class="swiper-slide" data-title="ЗАГОЛОВОК 3" data-image="./images/banner-bg.png">
             <div class="about__card">
               <div class="about__row">
@@ -129,6 +171,7 @@
               </div>
             </div>
           </div>
+
           <div class="swiper-slide" data-title="ЗАГОЛОВОК 4" data-image="./images/banner-bg.png">
             <div class="about__card">
               <div class="about__row">
@@ -138,7 +181,6 @@
               </div>
             </div>
           </div>
-
           <div class="swiper-slide" data-title="ЗАГОЛОВОК 5" data-image="./images/banner-bg.png">
             <div class="about__card">
               <div class="about__row">
@@ -156,12 +198,40 @@
     </div>
   </section>
 
+  <section class="expedition">
+
+    <div class="expedition__media" aria-hidden="true">
+      <div class="expedition__media-box">
+        <img src="./images/exp_group.png" alt="">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="expedition__layout">
+        <div class="expedition__content">
+          <h2 class="expedition__title">
+            ЭКСПЕДИЦИЯ<br>
+            НА ДАЛЬНИЙ ВОСТОК<br>
+            С ПОЛНЫМ ЗВУКОВЫМ<br>
+            ПОГРУЖЕНИЕМ
+          </h2>
+
+          <a class="expedition__btn" href="#">СМОТРЕТЬ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const titleEl = document.querySelector(".js-hero-slide-title");
-      const heroImg = document.getElementById("heroBanner");
+      const heroBanner = document.getElementById("heroBanner");
+
+      // стартовая картинка баннера
+      heroBanner.style.backgroundImage = 'url("./images/banner-bg.png")';
 
       const swiper = new Swiper(".about-swiper", {
         slidesPerView: 1,
@@ -185,12 +255,27 @@
         const img = slide ? slide.getAttribute("data-image") : "";
 
         if (titleEl) titleEl.textContent = t || "";
-        if (heroImg && img) heroImg.src = img;
+        if (heroBanner && img) heroBanner.style.backgroundImage = 'url("' + img + '")';
       }
 
       sync();
       swiper.on("slideChange", sync);
     });
+
+    (function () {
+      const header = document.querySelector(".site-header");
+      if (!header) return;
+
+      function onScroll() {
+        if (window.scrollY > 1) header.classList.add("is-scrolled");
+        else header.classList.remove("is-scrolled");
+      }
+
+      window.addEventListener("scroll", onScroll);
+      onScroll();
+    })();
+
   </script>
 </body>
+
 </html>
