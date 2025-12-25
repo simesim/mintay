@@ -231,6 +231,145 @@
   </section>
 
 
+  <section class="mainfish">
+    <div class="container">
+
+      <div class="mainfish__head">
+        <button class="mainfish__nav-btn mainfish__nav-btn--prev" type="button" aria-label="Назад">
+          <div class="mainfish__arrow-box">
+            <img src="./images/left_arrow1.png" alt="">
+          </div>
+        </button>
+
+        <h2 class="mainfish__title">ГЛАВНАЯ РЫБА РОССИИ</h2>
+
+        <button class="mainfish__nav-btn mainfish__nav-btn--next" type="button" aria-label="Вперёд">
+          <div class="mainfish__arrow-box">
+            <img src="./images/right_arrow1.png" alt="">
+          </div>
+        </button>
+      </div>
+
+
+      <div class="mainfish__slider-wrap">
+        <div class="swiper mainfish-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- 01 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~01~</div>
+
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">творить</div>
+                </div>
+
+                <div class="mainfish-card__text">
+                  Минтай — это нежная основа<br>
+                  для воплощения твоих идей:<br>
+                  пробуй специи, соусы, гарниры<br>
+                  и открывай новые вкусы.
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~02~</div>
+
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">заботиться</div>
+                </div>
+
+                <div class="mainfish-card__text">
+                  Минтай дарит лёгкость,<br>
+                  здоровье и хорошее настроение,<br>
+                  сделай заботу о близких<br>
+                  вкусной традицией!
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~03~</div>
+
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">удивлять</div>
+                </div>
+
+                <div class="mainfish-card__text">
+                  Просто приготовь<br>
+                  Дальневосточный минтай,<br>
+                  и он раскроется потрясающе нежным<br>
+                  вкусом, который покорит семью и гостей.
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~04~</div>
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">готовить</div>
+                </div>
+                <div class="mainfish-card__text">Текст для 04</div>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~05~</div>
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">делиться</div>
+                </div>
+                <div class="mainfish-card__text">Текст для 05</div>
+              </div>
+            </div>
+
+            <!-- 06 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~06~</div>
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">пробовать</div>
+                </div>
+                <div class="mainfish-card__text">Текст для 06</div>
+              </div>
+            </div>
+
+            <!-- 07 -->
+            <div class="swiper-slide">
+              <div class="mainfish-card">
+                <div class="mainfish-card__num">~07~</div>
+                <div class="mainfish-card__sub">
+                  <div class="mainfish-card__caps">ЛЕГКО</div>
+                  <div class="mainfish-card__script">вдохновляться</div>
+                </div>
+                <div class="mainfish-card__text">Текст для 07</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="mainfish-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
   <script>
@@ -269,6 +408,25 @@
       sync();
       swiper.on("slideChange", sync);
     });
+
+    const mainfishSwiper = new Swiper(".mainfish-swiper", {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 60,
+      speed: 450,
+      loop: false,
+
+      navigation: {
+        prevEl: ".mainfish__nav-btn--prev",
+        nextEl: ".mainfish__nav-btn--next",
+      },
+
+      pagination: {
+        el: ".mainfish-pagination",
+        clickable: true,
+      },
+    });
+
 
     (function () {
       const header = document.querySelector(".site-header");

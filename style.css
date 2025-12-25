@@ -42,7 +42,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  background: #f3f1ee;
+  background: #EFEEEC;
   overflow-x: hidden;
 }
 
@@ -401,7 +401,6 @@ img{
   text-align: center;
 }
 
-/* pagination */
 .about-pagination{
   margin-top: 18px;
   display: flex;
@@ -409,7 +408,6 @@ img{
   gap: 8px;
 }
 
-/* НЕ выбран: квадрат */
 .about-pagination .swiper-pagination-bullet{
   width: 8px;
   height: 4px;
@@ -419,7 +417,6 @@ img{
   margin: 0;
 }
 
-/* выбран: прямоугольник */
 .about-pagination .swiper-pagination-bullet-active{
   width: 24px;
   height: 4px;
@@ -437,7 +434,7 @@ img{
 
 .expedition__media{
   position: absolute;
-  top: -200px;     /* “заходит выше” */
+  top: -200px;   
   left: 0;
   right: 0;
   bottom: 0;
@@ -521,4 +518,123 @@ img{
 }
 
 
+.mainfish{
+  background: #203370;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
 
+.mainfish__head{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 44px;
+}
+
+.mainfish__title{
+  margin: 0;
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  color: #C4C4C4;
+  text-transform: uppercase;
+}
+
+.mainfish__nav-btn{
+  width: 120px;
+  height: 60px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainfish__arrow-box{
+  width: 120px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mainfish__slider-wrap{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainfish-card{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mainfish-card__num{
+  font-family: "TT Backwards Script", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 56px;  
+  line-height: 56px;
+  color: #FFDB77;
+  margin-bottom: 18px;
+}
+
+.mainfish-card__sub{
+  margin-bottom: 18px;
+}
+
+.mainfish-card__caps{
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #C4C4C4;
+  text-transform: uppercase;
+}
+
+.mainfish-card__script{
+  font-family: "TT Backwards Script", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;   
+  line-height: 40px;
+  color: #FFDB77;
+  margin-top: 4px;
+}
+
+.mainfish-card__text{
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C4C4C4;
+}
+
+.mainfish-pagination{
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mainfish-pagination .swiper-pagination-bullet{
+  width: 8px;
+  height: 4px;
+  background: #C4C4C4;
+  opacity: 1;
+  border-radius: 0;
+  margin: 0;
+}
+
+.mainfish-pagination .swiper-pagination-bullet-active{
+  width: 24px;
+  height: 4px;
+  background: #C4C4C4;
+}
