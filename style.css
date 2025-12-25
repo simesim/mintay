@@ -695,8 +695,8 @@ img {
 }
 
 .delicacy__img-box {
-  width: 520px;
-  height: 560px;
+  width: 500px;
+  height: auto;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -808,11 +808,12 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
+  
 }
 
 .product-card__img-box {
   width: auto;
-  height: 100px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -820,7 +821,7 @@ img {
 
 .product-card__img-box--big {
   width: auto;
-  height: 140px;
+  height: 70px;
 }
 
 .product-card__title {
@@ -1085,15 +1086,29 @@ img {
 .recipe-card {
   width: 340px;
   background: #FFFFFF;
-  border: 1px solid #E8E3DA;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-
-  padding: 14px 14px 16px 14px;
+  box-shadow: 0 10px 18px rgba(0,0,0,.08);
+  padding: 18px 18px 44px;
 
   height: 420px;
   transition: height 220ms ease, transform 220ms ease, box-shadow 220ms ease;
   overflow: hidden;
   position: relative;
+}
+
+.recipe-card::after{
+  content: "";
+  position: absolute;
+
+  left: -2px;             
+  right: -2px;
+  bottom: -12px;             
+
+  height: 34px;             
+  background: url("./images/recept.png") no-repeat center bottom;
+  background-size: 108% auto; 
+
+  pointer-events: none;
+  z-index: 2;
 }
 
 .recipe-card:hover {
@@ -1164,6 +1179,7 @@ img {
 
 .meta-item__icon {
   width: 16px;
+  flex: 0 0 16px;
   height: 16px;
   display: flex;
   align-items: center;
