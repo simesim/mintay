@@ -37,11 +37,13 @@
   font-style: normal;
   font-display: swap;
 }
+
 /* БАЗА */
 
 * {
   box-sizing: border-box;
 }
+
 /* BODY */
 
 body {
@@ -81,7 +83,8 @@ img {
 }
 
 @media (min-width: 1200px) {
-/* ХЕДЕР */
+
+  /* ХЕДЕР */
   .site-header {
     position: sticky;
     top: 0;
@@ -97,14 +100,16 @@ img {
 .header-top__inner {
   height: 44px;
   display: flex;
-  align-items: center;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 10px;
 }
 
 .header-top__right {
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .header-top__text {
@@ -118,12 +123,12 @@ img {
 .header-top__social {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .icon-box {
   width: 16px;
-  height: 16px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +178,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 10px;
   bottom: 0;
 
   display: flex;
@@ -194,6 +199,7 @@ img {
 
 .nav-item {
   position: relative;
+  top: -20px;
 }
 
 .nav__link {
@@ -225,7 +231,7 @@ img {
 
 .nav-drop {
   position: absolute;
-  top: 34px;
+  top: 22px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -295,6 +301,7 @@ img {
   transform: rotate(180deg);
   top: 6px;
 }
+
 /* БАННЕР */
 
 
@@ -389,6 +396,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 /* О НАС */
 
 .about {
@@ -424,6 +432,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 25px ;
 }
 
 /* Пагинация Swiper (общие) */
@@ -467,6 +476,7 @@ img {
 .mainfish-pagination .swiper-pagination-bullet-active {
   background: #C4C4C4;
 }
+
 /* ЭКСПЕДИЦИЯ */
 
 
@@ -546,6 +556,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 /* ВИДЕО */
 
 .video-block {
@@ -565,6 +576,7 @@ img {
   width: 100%;
   height: auto;
 }
+
 /* ЦИФРЫ */
 
 
@@ -660,6 +672,7 @@ img {
   justify-content: center;
   gap: 8px;
 }
+
 /* ВЫСШАЯ ПРОБА */
 
 .delicacy {
@@ -689,6 +702,7 @@ img {
   justify-content: center;
   overflow: hidden;
 }
+
 .delicacy__title {
   position: absolute;
   left: 0;
@@ -748,6 +762,7 @@ img {
   justify-content: center;
   gap: 8px;
 }
+
 /* ПРОДУКЦИЯ */
 
 .products {
@@ -902,6 +917,7 @@ img {
   width: 220px;
   height: 180px;
 }
+
 /* НОВОСТИ */
 
 .news {
@@ -1028,6 +1044,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 /* РЕЦЕПТЫ */
 
 .recipes {
@@ -1062,6 +1079,7 @@ img {
   row-gap: 60px;
   margin-bottom: 40px;
 }
+
 /* Карточки рецептов */
 
 .recipe-card {
@@ -1117,6 +1135,7 @@ img {
 
   min-height: 44px;
 }
+
 .recipe-card__meta {
   margin-top: 12px;
   display: flex;
@@ -1142,6 +1161,7 @@ img {
   line-height: 18px;
   color: #91887C;
 }
+
 .meta-item__icon {
   width: 16px;
   height: 16px;
@@ -1225,18 +1245,18 @@ img {
 
 /* FOOTER */
 /* ФУТЕР */
-.footer{
+.footer {
   position: relative;
   background: #D9D4CE;
   padding: 60px 0 36px;
 }
 
-.footer::before{
-  content:"";
-  position:absolute;
+.footer::before {
+  content: "";
+  position: absolute;
   left: 0;
   right: 0;
-  top: -18px; 
+  top: -18px;
   height: 18px;
   background-image: url("./images/Group 104.png");
   background-repeat: repeat-x;
@@ -1245,24 +1265,24 @@ img {
   pointer-events: none;
 }
 
-.footer__top{
+.footer__top {
   display: flex;
   align-items: flex-start;
   gap: 80px;
 }
 
-.footer__logo{
+.footer__logo {
   width: 120px;
   flex: 0 0 auto;
 }
 
-.footer__logo img{
+.footer__logo img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.footer__nav{
+.footer__nav {
   display: grid;
   grid-template-columns: 220px 220px;
   column-gap: 90px;
@@ -1270,7 +1290,7 @@ img {
   padding-top: 8px;
 }
 
-.footer__nav a{
+.footer__nav a {
   font-family: "GPN_Helios Condensed", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1280,22 +1300,22 @@ img {
   text-decoration: none;
 }
 
-.footer__nav a:hover{
+.footer__nav a:hover {
   text-decoration: underline;
 }
 
-.footer__contacts{
+.footer__contacts {
   display: flex;
   gap: 44px;
   margin-left: auto;
   padding-top: 8px;
 }
 
-.footer__contacts-col{
+.footer__contacts-col {
   width: 220px;
 }
 
-.footer__line{
+.footer__line {
   font-family: "GPN_Helios Condensed", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1303,7 +1323,7 @@ img {
   color: #91887C;
 }
 
-.footer__bottom{
+.footer__bottom {
   margin-top: 44px;
   display: grid;
   grid-template-columns: 220px auto 220px;
@@ -1311,7 +1331,7 @@ img {
   column-gap: 20px;
 }
 
-.footer__copy{
+.footer__copy {
   font-family: "GPN_Helios Condensed", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1319,7 +1339,7 @@ img {
   color: #91887C;
 }
 
-.footer__bottom-link{
+.footer__bottom-link {
   font-family: "GPN_Helios Condensed", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1330,11 +1350,10 @@ img {
   text-align: center;
 }
 
-.footer__bottom-link--right{
+.footer__bottom-link--right {
   text-align: right;
 }
 
-.footer__bottom-link:hover{
+.footer__bottom-link:hover {
   text-decoration: underline;
 }
-
