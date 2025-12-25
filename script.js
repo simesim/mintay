@@ -2,7 +2,7 @@
 const swiper = new Swiper(".about-swiper", {
   slidesPerView: 1,
   speed: 450,
-  loop: true, // было false
+  loop: true, 
 
   navigation: {
     prevEl: ".hero__arrow--prev",
@@ -21,9 +21,8 @@ const mainfishSwiper = new Swiper(".mainfish-swiper", {
   slidesPerGroup: 1,
   spaceBetween: 60,
   speed: 450,
-  loop: true,                 // было false
-  loopAdditionalSlides: 3,    // чтобы карусель работала гладко при 3 карточках
-
+  loop: true,                
+  loopAdditionalSlides: 3,  
   navigation: {
     prevEl: ".mainfish__nav-btn--prev",
     nextEl: ".mainfish__nav-btn--next",
@@ -41,7 +40,7 @@ const delicacySwiper = new Swiper(".delicacy-swiper", {
   slidesPerGroup: 1,
   spaceBetween: 0,
   speed: 450,
-  loop: true, // было false
+  loop: true, 
 
   navigation: {
     prevEl: ".delicacy__nav--prev",
@@ -61,8 +60,8 @@ const productsSwiper = new Swiper(".products-swiper", {
   centeredSlides: true,
   spaceBetween: 80,
   speed: 450,
-  loop: true,                 // было false
-  loopAdditionalSlides: 3,    // чтобы не дёргалось при 3 вью
+  loop: true,                 
+  loopAdditionalSlides: 3,   
 
   navigation: {
     prevEl: ".products__nav--prev",
