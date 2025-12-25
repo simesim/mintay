@@ -1,78 +1,80 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // О НАС + баннер (фон меняется от слайда)
+// О НАС + баннер
+const swiper = new Swiper(".about-swiper", {
+  slidesPerView: 1,
+  speed: 450,
+  loop: true, // было false
 
-    const titleEl = document.querySelector(".js-hero-slide-title");
-    const heroBanner = document.getElementById("heroBanner");
+  navigation: {
+    prevEl: ".hero__arrow--prev",
+    nextEl: ".hero__arrow--next",
+  },
 
-    // стартовая картинка баннера
-    heroBanner.style.backgroundImage = 'url("./images/banner-bg.png")';
-
-    const swiper = new Swiper(".about-swiper", {
-        slidesPerView: 1,
-        speed: 450,
-        loop: false,
-
-        navigation: {
-            prevEl: ".hero__arrow--prev",
-            nextEl: ".hero__arrow--next",
-        },
-
-        pagination: {
-            el: ".about-pagination",
-            clickable: true,
-        },
-    });
-
-    function sync() {
-        const slide = swiper.slides[swiper.activeIndex];
-        const t = slide ? slide.getAttribute("data-title") : "";
-        const img = slide ? slide.getAttribute("data-image") : "";
-
-        if (titleEl) titleEl.textContent = t || "";
-        if (heroBanner && img) heroBanner.style.backgroundImage = 'url("' + img + '")';
-    }
-
-    sync();
-    swiper.on("slideChange", sync);
+  pagination: {
+    el: ".about-pagination",
+    clickable: true,
+  },
 });
 
 // ЦИФРЫ (слайдер)
 const mainfishSwiper = new Swiper(".mainfish-swiper", {
-    slidesPerView: 3,
-    slidesPerGroup: 1,
-    spaceBetween: 60,
-    speed: 450,
-    loop: false,
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 60,
+  speed: 450,
+  loop: true,                 // было false
+  loopAdditionalSlides: 3,    // чтобы карусель работала гладко при 3 карточках
 
-    navigation: {
-        prevEl: ".mainfish__nav-btn--prev",
-        nextEl: ".mainfish__nav-btn--next",
-    },
+  navigation: {
+    prevEl: ".mainfish__nav-btn--prev",
+    nextEl: ".mainfish__nav-btn--next",
+  },
 
-    pagination: {
-        el: ".mainfish-pagination",
-        clickable: true,
-    },
+  pagination: {
+    el: ".mainfish-pagination",
+    clickable: true,
+  },
 });
 
 // ВЫСШАЯ ПРОБА (слайдер)
 const delicacySwiper = new Swiper(".delicacy-swiper", {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 0,
-    speed: 450,
-    loop: false,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
+  speed: 450,
+  loop: true, // было false
 
-    navigation: {
-        prevEl: ".delicacy__nav--prev",
-        nextEl: ".delicacy__nav--next",
-    },
+  navigation: {
+    prevEl: ".delicacy__nav--prev",
+    nextEl: ".delicacy__nav--next",
+  },
 
-    pagination: {
-        el: ".delicacy-pagination",
-        clickable: true,
-    },
+  pagination: {
+    el: ".delicacy-pagination",
+    clickable: true,
+  },
 });
+
+// ПРОДУКЦИЯ (слайдер)
+const productsSwiper = new Swiper(".products-swiper", {
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  spaceBetween: 80,
+  speed: 450,
+  loop: true,                 // было false
+  loopAdditionalSlides: 3,    // чтобы не дёргалось при 3 вью
+
+  navigation: {
+    prevEl: ".products__nav--prev",
+    nextEl: ".products__nav--next",
+  },
+
+  pagination: {
+    el: ".products-pagination",
+    clickable: true,
+  },
+});
+
 
 (function () {
     const header = document.querySelector(".site-header");
@@ -87,25 +89,7 @@ const delicacySwiper = new Swiper(".delicacy-swiper", {
     onScroll();
 })();
 
-// ПРОДУКЦИЯ (слайдер)
-const productsSwiper = new Swiper(".products-swiper", {
-  slidesPerView: 3,
-  slidesPerGroup: 1,
-  centeredSlides: true,
-  spaceBetween: 80,
-  speed: 450,
-  loop: false,
 
-  navigation: {
-    prevEl: ".products__nav--prev",
-    nextEl: ".products__nav--next",
-  },
-
-  pagination: {
-    el: ".products-pagination",
-    clickable: true,
-  },
-});
 
 (function () {
   const SPEED = 16;
