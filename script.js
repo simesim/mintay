@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // О НАС + баннер (фон меняется от слайда)
+
     const titleEl = document.querySelector(".js-hero-slide-title");
     const heroBanner = document.getElementById("heroBanner");
 
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     swiper.on("slideChange", sync);
 });
 
+// ЦИФРЫ (слайдер)
 const mainfishSwiper = new Swiper(".mainfish-swiper", {
     slidesPerView: 3,
     slidesPerGroup: 1,
@@ -52,6 +55,7 @@ const mainfishSwiper = new Swiper(".mainfish-swiper", {
     },
 });
 
+// ВЫСШАЯ ПРОБА (слайдер)
 const delicacySwiper = new Swiper(".delicacy-swiper", {
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -83,6 +87,7 @@ const delicacySwiper = new Swiper(".delicacy-swiper", {
     onScroll();
 })();
 
+// ПРОДУКЦИЯ (слайдер)
 const productsSwiper = new Swiper(".products-swiper", {
   slidesPerView: 3,
   slidesPerGroup: 1,

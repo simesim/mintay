@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- ХЕДЕР -->
   <header class="site-header">
     <div class="header-top">
       <div class="container">
@@ -30,8 +31,8 @@
                 </div>
               </a>
               <a class="social-link" href="#" aria-label="OK">
-                <div class="icon-box">
-                  <img src="./images/odnok.png" alt="OK">
+                <div class="icon-box"style="width: 12px; height: 12px;">
+                  <img src="./images/odnok.png" alt="OK" >
                 </div>
               </a>
             </div>
@@ -78,6 +79,8 @@
       </div>
     </div>
   </header>
+  
+  <!-- БАННЕР -->
   <section class="hero">
     <div class="hero__media" id="heroBanner"></div>
 
@@ -108,6 +111,8 @@
     </div>
   </section>
 
+  
+  <!-- О НАС (слайдер) -->
   <section class="about">
     <div class="container">
       <div class="swiper about-swiper">
@@ -198,6 +203,8 @@
     </div>
   </section>
 
+  
+  <!-- ЭКСПЕДИЦИЯ -->
   <section class="expedition">
 
     <div class="expedition__media" aria-hidden="true">
@@ -222,6 +229,8 @@
     </div>
   </section>
 
+  
+  <!-- ВИДЕО -->
   <section class="video-block">
     <div class="video-block__box">
       <video class="video-block__video" poster="./images/fish.png" autoplay muted playsinline loop>
@@ -231,6 +240,8 @@
   </section>
 
 
+  
+  <!-- ЦИФРЫ (слайдер) -->
   <section class="mainfish">
     <div class="container">
 
@@ -255,7 +266,7 @@
         <div class="swiper mainfish-swiper">
           <div class="swiper-wrapper">
 
-            <!-- 01 -->
+            <!-- Карточка 1 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~01~</div>
@@ -274,7 +285,7 @@
               </div>
             </div>
 
-            <!-- 02 -->
+            <!-- Карточка 2 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~02~</div>
@@ -293,7 +304,7 @@
               </div>
             </div>
 
-            <!-- 03 -->
+            <!-- Карточка 3 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~03~</div>
@@ -312,7 +323,7 @@
               </div>
             </div>
 
-            <!-- 04 -->
+            <!-- Карточка 4 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~04~</div>
@@ -324,7 +335,7 @@
               </div>
             </div>
 
-            <!-- 05 -->
+            <!-- Карточка 5 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~05~</div>
@@ -336,7 +347,7 @@
               </div>
             </div>
 
-            <!-- 06 -->
+            <!-- Карточка 6 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~06~</div>
@@ -348,7 +359,7 @@
               </div>
             </div>
 
-            <!-- 07 -->
+            <!-- Карточка 7 -->
             <div class="swiper-slide">
               <div class="mainfish-card">
                 <div class="mainfish-card__num">~07~</div>
@@ -369,18 +380,20 @@
     </div>
   </section>
 
+  
+  <!-- ВЫСШАЯ ПРОБА (слайдер) -->
   <section class="delicacy">
     <div class="container">
 
       <div class="swiper delicacy-swiper">
         <div class="swiper-wrapper">
 
-          <!-- SLIDE 1 -->
+          <!-- Слайд 1 -->
           <div class="swiper-slide">
             <div class="delicacy__slide">
 
               <div class="delicacy__hero">
-                <!-- фото -->
+                <!-- Фото (пока одно на все слайды) -->
                 <div class="delicacy__img-wrap">
                   <div class="delicacy__img-box">
                     <img src="./images/dish1.png" alt="Блюдо">
@@ -414,7 +427,7 @@
             </div>
           </div>
 
-          <!-- SLIDE 2 -->
+          <!-- Слайд 2 -->
           <div class="swiper-slide">
             <div class="delicacy__slide">
               <div class="delicacy__hero">
@@ -447,7 +460,7 @@
             </div>
           </div>
 
-          <!-- SLIDE 3 -->
+          <!-- Слайд 3 -->
           <div class="swiper-slide">
             <div class="delicacy__slide">
               <div class="delicacy__hero">
@@ -480,7 +493,7 @@
             </div>
           </div>
 
-          <!-- SLIDE 4 -->
+          <!-- Слайд 4 -->
           <div class="swiper-slide">
             <div class="delicacy__slide">
               <div class="delicacy__hero">
@@ -513,7 +526,7 @@
             </div>
           </div>
 
-          <!-- SLIDE 5 -->
+          <!-- Слайд 5 -->
           <div class="swiper-slide">
             <div class="delicacy__slide">
               <div class="delicacy__hero">
@@ -554,6 +567,8 @@
     </div>
   </section>
 
+  
+  <!-- РЕЦЕПТЫ (карточки) -->
   <section class="recipes">
     <div class="recipes__pattern">
       <div class="container">
@@ -602,13 +617,13 @@
               </div>
             </div>
 
-            <!-- печатающийся текст -->
+            <!-- Рецепты: печатающийся текст (hover) -->
             <div class="recipe-card__typewriter" aria-hidden="true">
               <div class="typewriter__text"></div>
             </div>
           </article>
 
-          <!-- CARD 2 -->
+          <!-- Карточка 2 -->
           <article class="recipe-card"
             data-type="Минтай под сметанно-горчичным соусом с хлебной крошкой — быстрый и вкусный вариант..."
             data-ing="Ингредиенты: Минтай (филе), Сметана, Горчица, Чеснок, Хлеб, Масло, Соль, Перец, Зелень.">
@@ -647,7 +662,7 @@
             </div>
           </article>
 
-          <!-- CARD 3 -->
+          <!-- Карточка 3 -->
           <article class="recipe-card"
             data-type="Запечённый минтай с кабачками, помидорами и моцареллой — простой семейный ужин..."
             data-ing="Ингредиенты: Филе минтая, Кабачок, Помидоры, Моцарелла, Лук, Чеснок, Сметана, Масло, Соль.">
@@ -781,6 +796,8 @@
   </section>
 
 
+  
+  <!-- ПРОДУКЦИЯ (слайдер) -->
   <section class="products">
     <div class="container">
 
@@ -803,7 +820,7 @@
       <div class="swiper products-swiper">
         <div class="swiper-wrapper">
 
-          <!-- 1 -->
+          <!-- Товар 1 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -826,7 +843,7 @@
             </div>
           </div>
 
-          <!-- 2 -->
+          <!-- Товар 2 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -849,7 +866,7 @@
             </div>
           </div>
 
-          <!-- 3 -->
+          <!-- Товар 3 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -873,7 +890,7 @@
             </div>
           </div>
 
-          <!-- 4 -->
+          <!-- Товар 4 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -896,7 +913,7 @@
             </div>
           </div>
 
-          <!-- 5 -->
+          <!-- Товар 5 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -919,7 +936,7 @@
             </div>
           </div>
 
-          <!-- 6 -->
+          <!-- Товар 6 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -943,7 +960,7 @@
             </div>
           </div>
 
-          <!-- 7 -->
+          <!-- Товар 7 -->
           <div class="swiper-slide">
             <div class="product-card">
               <div class="product-card__img-wrap">
@@ -974,6 +991,8 @@
     </div>
   </section>
 
+  
+  <!-- НОВОСТИ -->
   <section class="news">
     <div class="container">
 
@@ -981,7 +1000,7 @@
 
       <div class="news__grid">
 
-        <!-- 1 -->
+        <!-- Новость 1 -->
         <article class="news-card">
           <a class="news-card__img-link" href="#">
             <div class="news-card__img-box">
@@ -1006,7 +1025,7 @@
           </p>
         </article>
 
-        <!-- 2 -->
+        <!-- Новость 2 -->
         <article class="news-card">
           <a class="news-card__img-link" href="#">
             <div class="news-card__img-box">
@@ -1030,7 +1049,7 @@
           </p>
         </article>
 
-        <!-- 3 -->
+        <!-- Новость 3 -->
         <article class="news-card">
           <a class="news-card__img-link" href="#">
             <div class="news-card__img-box">
@@ -1063,16 +1082,16 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ФУТЕР -->
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__top">
-        <!-- logo -->
+        <!-- Лого -->
         <a class="footer__logo" href="#">
           <img src="./images/logo.png" alt="Дальневосточный Минтай">
         </a>
 
-        <!-- menu -->
+        <!-- Меню -->
         <nav class="footer__nav" aria-label="Навигация">
           <a href="#usefulness">ПОЛЕЗНОСТЬ</a>
           <a href="#facts">ФАКТЫ</a>
@@ -1083,7 +1102,7 @@
           <a href="#premium">ВЫСШАЯ ПРОБА</a>
         </nav>
 
-        <!-- contacts -->
+        <!-- Контакты -->
         <div class="footer__contacts">
           <div class="footer__contacts-col">
             <div class="footer__line">690091, г. Владивосток,</div>

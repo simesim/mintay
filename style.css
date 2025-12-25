@@ -37,10 +37,12 @@
   font-style: normal;
   font-display: swap;
 }
+/* БАЗА */
 
 * {
   box-sizing: border-box;
 }
+/* BODY */
 
 body {
   margin: 0;
@@ -79,6 +81,7 @@ img {
 }
 
 @media (min-width: 1200px) {
+/* ХЕДЕР */
   .site-header {
     position: sticky;
     top: 0;
@@ -292,6 +295,7 @@ img {
   transform: rotate(180deg);
   top: 6px;
 }
+/* БАННЕР */
 
 
 .hero {
@@ -359,19 +363,24 @@ img {
   text-transform: uppercase;
 }
 
-.hero__arrow {
+/* Кнопки-стрелки (общие) */
+.hero__arrow,
+.mainfish__nav-btn,
+.products__nav,
+.delicacy__nav {
   width: 120px;
   height: 60px;
   background: transparent;
   border: 0;
   padding: 0;
+  cursor: pointer;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  cursor: pointer;
 }
+
+
 
 .arrow-box {
   width: 120px;
@@ -380,6 +389,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+/* О НАС */
 
 .about {
   background: transparent;
@@ -416,20 +426,50 @@ img {
   gap: 8px;
 }
 
-.about-pagination .swiper-pagination-bullet {
+/* Пагинация Swiper (общие) */
+.about-pagination .swiper-pagination-bullet,
+.mainfish-pagination .swiper-pagination-bullet,
+.delicacy-pagination .swiper-pagination-bullet,
+.products-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 4px;
-  background: #D9D9D9;
   opacity: 1;
   border-radius: 0;
   margin: 0;
 }
 
-.about-pagination .swiper-pagination-bullet-active {
+/* Пагинация Swiper (цвета) */
+.about-pagination .swiper-pagination-bullet,
+.delicacy-pagination .swiper-pagination-bullet,
+.products-pagination .swiper-pagination-bullet {
+  background: #D9D9D9;
+}
+
+.mainfish-pagination .swiper-pagination-bullet {
+  background: #C4C4C4;
+}
+
+/* Активная */
+.about-pagination .swiper-pagination-bullet-active,
+.mainfish-pagination .swiper-pagination-bullet-active,
+.delicacy-pagination .swiper-pagination-bullet-active,
+.products-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 4px;
+}
+
+.about-pagination .swiper-pagination-bullet-active,
+.delicacy-pagination .swiper-pagination-bullet-active,
+.products-pagination .swiper-pagination-bullet-active {
   background: #91887C;
 }
+
+.mainfish-pagination .swiper-pagination-bullet-active {
+  background: #C4C4C4;
+}
+/* ЭКСПЕДИЦИЯ */
+
+
 
 .expedition {
   position: relative;
@@ -506,6 +546,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* ВИДЕО */
 
 .video-block {
   position: relative;
@@ -524,6 +565,7 @@ img {
   width: 100%;
   height: auto;
 }
+/* ЦИФРЫ */
 
 
 .mainfish {
@@ -549,19 +591,6 @@ img {
   line-height: 56px;
   color: #C4C4C4;
   text-transform: uppercase;
-}
-
-.mainfish__nav-btn {
-  width: 120px;
-  height: 60px;
-  background: transparent;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .mainfish__arrow-box {
@@ -631,21 +660,7 @@ img {
   justify-content: center;
   gap: 8px;
 }
-
-.mainfish-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 4px;
-  background: #C4C4C4;
-  opacity: 1;
-  border-radius: 0;
-  margin: 0;
-}
-
-.mainfish-pagination .swiper-pagination-bullet-active {
-  width: 24px;
-  height: 4px;
-  background: #C4C4C4;
-}
+/* ВЫСШАЯ ПРОБА */
 
 .delicacy {
   background: transparent;
@@ -696,18 +711,6 @@ img {
 .delicacy__nav {
   position: absolute;
   top: 244px;
-  width: 120px;
-  height: 60px;
-
-  background: transparent;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
   z-index: 4;
 }
 
@@ -745,21 +748,7 @@ img {
   justify-content: center;
   gap: 8px;
 }
-
-.delicacy-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 4px;
-  background: #D9D9D9;
-  opacity: 1;
-  border-radius: 0;
-  margin: 0;
-}
-
-.delicacy-pagination .swiper-pagination-bullet-active {
-  width: 24px;
-  height: 4px;
-  background: #91887C;
-}
+/* ПРОДУКЦИЯ */
 
 .products {
   background: transparent;
@@ -784,19 +773,6 @@ img {
   line-height: 56px;
   color: #91887C;
   text-transform: uppercase;
-}
-
-.products__nav {
-  width: 120px;
-  height: 60px;
-  background: transparent;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .products__arrow-box {
@@ -899,21 +875,6 @@ img {
   gap: 8px;
 }
 
-.products-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  background: #D9D9D9;
-  opacity: 1;
-  border-radius: 0;
-  margin: 0;
-}
-
-.products-pagination .swiper-pagination-bullet-active {
-  width: 24px;
-  height: 8px;
-  background: #91887C;
-}
-
 .products-swiper .swiper-slide {
   transition: transform 250ms ease;
   transform: scale(0.86);
@@ -941,6 +902,7 @@ img {
   width: 220px;
   height: 180px;
 }
+/* НОВОСТИ */
 
 .news {
   background: transparent;
@@ -1066,6 +1028,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* РЕЦЕПТЫ */
 
 .recipes {
   background: transparent;
@@ -1099,6 +1062,7 @@ img {
   row-gap: 60px;
   margin-bottom: 40px;
 }
+/* Карточки рецептов */
 
 .recipe-card {
   width: 340px;
@@ -1260,6 +1224,7 @@ img {
 
 
 /* FOOTER */
+/* ФУТЕР */
 .footer{
   position: relative;
   background: #D9D4CE;
