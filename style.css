@@ -432,7 +432,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 25px ;
+  margin-bottom: 25px;
 }
 
 /* Пагинация Swiper (общие) */
@@ -808,7 +808,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
-  
+
 }
 
 .product-card__img-box {
@@ -894,6 +894,8 @@ img {
 .products-swiper .swiper-slide {
   transition: transform 250ms ease;
   transform: scale(0.86);
+  align-items: flex-start;
+  padding-top: 8px;
 }
 
 .products-swiper .swiper-slide-active {
@@ -910,13 +912,33 @@ img {
 }
 
 .products-swiper .product-card__img-box {
-  width: 140px;
-  height: 120px;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .products-swiper .swiper-slide-active .product-card__img-box {
-  width: 220px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
+}
+
+.products-swiper .product-card__img-wrap {
+  margin-bottom: 24px;
+}
+
+.products-swiper .product-card__img-box img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.products-swiper .product-card__title {
+  margin-top: 6px;
 }
 
 /* НОВОСТИ */
@@ -1086,7 +1108,7 @@ img {
 .recipe-card {
   width: 340px;
   background: #FFFFFF;
-  box-shadow: 0 10px 18px rgba(0,0,0,.08);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, .08);
   padding: 18px 18px 44px;
 
   height: 420px;
@@ -1095,17 +1117,17 @@ img {
   position: relative;
 }
 
-.recipe-card::after{
+.recipe-card::after {
   content: "";
   position: absolute;
 
-  left: -2px;             
+  left: -2px;
   right: -2px;
-  bottom: -12px;             
+  bottom: -12px;
 
-  height: 34px;             
+  height: 34px;
   background: url("./images/recept.png") no-repeat center bottom;
-  background-size: 108% auto; 
+  background-size: 108% auto;
 
   pointer-events: none;
   z-index: 2;
@@ -1263,7 +1285,7 @@ img {
 /* ФУТЕР */
 .footer {
   position: relative;
-  background: #D9D4CE;
+  background: #d8d6d3;
   padding: 60px 0 36px;
 }
 
@@ -1273,18 +1295,27 @@ img {
   left: 0;
   right: 0;
   top: -18px;
-  height: 18px;
+  width: 100%;
+  height: 90px;
+
   background-image: url("./images/Group 104.png");
   background-repeat: repeat-x;
   background-position: top left;
-  background-size: auto 18px;
+  background-size: auto 150px;
+
   pointer-events: none;
+  z-index: 1;
 }
 
 .footer__top {
   display: flex;
   align-items: flex-start;
   gap: 80px;
+}
+
+.footer>* {
+  position: relative;
+  z-index: 2;
 }
 
 .footer__logo {
