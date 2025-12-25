@@ -82,3 +82,65 @@ const delicacySwiper = new Swiper(".delicacy-swiper", {
     window.addEventListener("scroll", onScroll);
     onScroll();
 })();
+
+const productsSwiper = new Swiper(".products-swiper", {
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  spaceBetween: 80,
+  speed: 450,
+  loop: false,
+
+  navigation: {
+    prevEl: ".products__nav--prev",
+    nextEl: ".products__nav--next",
+  },
+
+  pagination: {
+    el: ".products-pagination",
+    clickable: true,
+  },
+});
+
+(function () {
+  const SPEED = 16; // чем меньше — тем быстрее печатает
+
+  function startTyping(card) {
+    const box = card.querySelector(".typewriter__text");
+    if (!box) return;
+
+    const textA = card.getAttribute("data-type") || "";
+    const textB = card.getAttribute("data-ing") || "";
+    const full = (textA + "\n\n" + textB).trim();
+
+    // стоп старого таймера
+    stopTyping(card);
+
+    box.textContent = "";
+    let i = 0;
+
+    const timer = setInterval(() => {
+      i += 1;
+      box.textContent = full.slice(0, i);
+      if (i >= full.length) stopTyping(card);
+    }, SPEED);
+
+    card._twTimer = timer;
+  }
+
+  function stopTyping(card) {
+    if (card._twTimer) {
+      clearInterval(card._twTimer);
+      card._twTimer = null;
+    }
+  }
+
+  document.querySelectorAll(".recipe-card").forEach((card) => {
+    card.addEventListener("mouseenter", () => startTyping(card));
+    card.addEventListener("mouseleave", () => {
+      stopTyping(card);
+      const box = card.querySelector(".typewriter__text");
+      if (box) box.textContent = ""; // чтобы заново печаталось при следующем наведении
+    });
+  });
+})();

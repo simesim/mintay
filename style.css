@@ -5,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "HeliosCondC";
   src: url("./fonts/HeliosCondC-Bold.woff") format("woff");
@@ -12,6 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "TT Backwards Script";
   src: url("./fonts/TT Backwards Script Trial Regular.otf") format("opentype");
@@ -19,6 +21,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "TT Backwards Script";
   src: url("./fonts/TT Backwards Script Trial Bold.otf") format("opentype");
@@ -26,6 +29,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "TT Travels Next";
   src: url("./fonts/TT Travels Next Trial ExtraBold.ttf") format("truetype");
@@ -34,9 +38,11 @@
   font-display: swap;
 }
 
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body{
+body {
   margin: 0;
   font-family: "HeliosCondC", Arial, sans-serif;
   font-weight: 400;
@@ -46,14 +52,14 @@ body{
   overflow-x: hidden;
 }
 
-img{
+img {
   display: block;
   width: 100%;
   height: auto;
   max-width: 100%;
 }
 
-.container{
+.container {
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
@@ -65,39 +71,40 @@ img{
     padding: 0 20px;
   }
 }
+
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
 }
 
-@media (min-width: 1200px){
-  .site-header{
+@media (min-width: 1200px) {
+  .site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
   }
 }
 
-.header-top{
+.header-top {
   height: 44px;
   background: #203370;
 }
 
-.header-top__inner{
+.header-top__inner {
   height: 44px;
   display: flex;
   align-items: center;
 }
 
-.header-top__right{
+.header-top__right {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.header-top__text{
+.header-top__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -105,13 +112,13 @@ img{
   text-transform: uppercase;
 }
 
-.header-top__social{
+.header-top__social {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.icon-box{
+.icon-box {
   width: 16px;
   height: 16px;
   display: flex;
@@ -119,31 +126,31 @@ img{
   justify-content: center;
 }
 
-.social-link{
+.social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.header-main{
+.header-main {
   height: 110px;
   background: transparent;
 }
 
-.site-header.is-scrolled .header-main{
+.site-header.is-scrolled .header-main {
   background: #ffffff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 
-.header-main__inner{
+.header-main__inner {
   height: 110px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.logo{
+.logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +158,7 @@ img{
   z-index: 2;
 }
 
-.logo-box{
+.logo-box {
   width: 75px;
   height: 35px;
   display: flex;
@@ -159,7 +166,7 @@ img{
   justify-content: center;
 }
 
-.nav{
+.nav {
   position: absolute;
   left: 0;
   right: 0;
@@ -172,21 +179,21 @@ img{
   z-index: 3;
 }
 
-.nav-list{
+.nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
 
   display: flex;
   align-items: center;
-  gap: 120px; 
+  gap: 120px;
 }
 
-.nav-item{
+.nav-item {
   position: relative;
 }
 
-.nav__link{
+.nav__link {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -201,19 +208,19 @@ img{
   text-decoration: none;
 }
 
-.nav__btn{
+.nav__btn {
   background: transparent;
   border: 0;
   padding: 0;
   cursor: pointer;
 }
 
-.nav__caret{
+.nav__caret {
   font-size: 14px;
   line-height: 14px;
 }
 
-.nav-drop{
+.nav-drop {
   position: absolute;
   top: 34px;
   left: 50%;
@@ -224,13 +231,13 @@ img{
 
   background: #ffffff;
   border: 1px solid #e6e0d7;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 
   display: none;
   z-index: 50;
 }
 
-.nav-drop__link{
+.nav-drop__link {
   display: block;
   padding: 10px 0;
 
@@ -244,30 +251,30 @@ img{
   text-decoration: none;
 }
 
-.nav-drop__link + .nav-drop__link{
+.nav-drop__link+.nav-drop__link {
   border-top: 1px solid #f0ebe3;
 }
 
-.nav-item--dropdown:hover .nav-drop{
+.nav-item--dropdown:hover .nav-drop {
   display: block;
 }
 
 
-.nav__link:hover{
+.nav__link:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.nav__btn{
+.nav__btn {
   background: transparent;
   border: 0;
   padding: 0;
   cursor: pointer;
   position: relative;
-  padding-right: 18px; 
+  padding-right: 18px;
 }
 
-.nav__btn::after{
+.nav__btn::after {
   content: "";
   position: absolute;
   right: 0;
@@ -278,15 +285,16 @@ img{
 
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 8px solid #203370; 
+  border-top: 8px solid #203370;
 }
-.nav-item--dropdown:hover .nav__btn::after{
+
+.nav-item--dropdown:hover .nav__btn::after {
   transform: rotate(180deg);
   top: 6px;
 }
 
 
-.hero{
+.hero {
   position: relative;
   height: 960px;
   overflow: hidden;
@@ -295,7 +303,7 @@ img{
   padding-top: 154px;
 }
 
-.hero__media{
+.hero__media {
   position: absolute;
   top: 0;
   left: 0;
@@ -309,7 +317,7 @@ img{
   background-size: cover;
 }
 
-.hero__title{
+.hero__title {
   position: absolute;
   top: 250px;
   left: 0;
@@ -321,12 +329,12 @@ img{
   z-index: 5;
 }
 
-.h1-box{
+.h1-box {
   width: 760px;
   display: block;
 }
 
-.hero__promo{
+.hero__promo {
   position: absolute;
   left: 0;
   right: 0;
@@ -334,7 +342,7 @@ img{
   z-index: 6;
 }
 
-.hero__promo-inner{
+.hero__promo-inner {
   height: 60px;
   display: flex;
   align-items: center;
@@ -342,7 +350,7 @@ img{
   gap: 28px;
 }
 
-.hero__promo-text{
+.hero__promo-text {
   font-family: "HeliosCondC", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -351,7 +359,7 @@ img{
   text-transform: uppercase;
 }
 
-.hero__arrow{
+.hero__arrow {
   width: 120px;
   height: 60px;
   background: transparent;
@@ -365,7 +373,7 @@ img{
   cursor: pointer;
 }
 
-.arrow-box{
+.arrow-box {
   width: 120px;
   height: 60px;
   display: flex;
@@ -373,25 +381,25 @@ img{
   justify-content: center;
 }
 
-.about{
+.about {
   background: transparent;
   padding-top: 40px;
   padding-bottom: 60px;
 }
 
-.about__card{
+.about__card {
   background: transparent;
   padding: 32px 40px 22px;
 }
 
-.about__row{
+.about__row {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 90px;
 }
 
-.b-text{
+.b-text {
   width: 300px;
   font-family: "HeliosCondC", Arial, sans-serif;
   font-weight: 700;
@@ -401,14 +409,14 @@ img{
   text-align: center;
 }
 
-.about-pagination{
+.about-pagination {
   margin-top: 18px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.about-pagination .swiper-pagination-bullet{
+.about-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 4px;
   background: #D9D9D9;
@@ -417,13 +425,13 @@ img{
   margin: 0;
 }
 
-.about-pagination .swiper-pagination-bullet-active{
+.about-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 4px;
   background: #91887C;
 }
 
-.expedition{
+.expedition {
   position: relative;
   overflow: hidden;
   background: transparent;
@@ -432,9 +440,9 @@ img{
   min-height: 460px;
 }
 
-.expedition__media{
+.expedition__media {
   position: absolute;
-  top: -200px;   
+  top: -200px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -442,18 +450,18 @@ img{
   pointer-events: none;
 }
 
-.expedition__media-box{
-  width: 1900px;          /* ннадо подумать еще */
+.expedition__media-box {
+  width: 1900px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
 
   display: flex;
-  align-items: flex-end;  
+  align-items: flex-end;
   justify-content: center;
 }
 
-.expedition__layout{
+.expedition__layout {
   position: relative;
   z-index: 2;
   min-height: 460px;
@@ -462,13 +470,13 @@ img{
   align-items: center;
 }
 
-.expedition__content{
-  width: 720px;          
-  margin-left: 120px;   
-  text-align: center; 
+.expedition__content {
+  width: 720px;
+  margin-left: 120px;
+  text-align: center;
 }
 
-.expedition__title{
+.expedition__title {
   margin: 0 0 50px 0;
   font-family: "TT Travels Next", Arial, sans-serif;
   font-weight: 800;
@@ -478,7 +486,7 @@ img{
   text-transform: uppercase;
 }
 
-.expedition__btn{
+.expedition__btn {
   width: 180px;
   height: 48px;
 
@@ -499,32 +507,32 @@ img{
   text-transform: uppercase;
 }
 
-.video-block{
+.video-block {
   position: relative;
   overflow: hidden;
   background: transparent;
 }
 
-.video-block__box{
-  width: 1920px;        
+.video-block__box {
+  width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.video-block__video{
+.video-block__video {
   display: block;
   width: 100%;
   height: auto;
 }
 
 
-.mainfish{
+.mainfish {
   background: #203370;
   padding-top: 64px;
   padding-bottom: 56px;
 }
 
-.mainfish__head{
+.mainfish__head {
   height: 64px;
   display: flex;
   align-items: center;
@@ -533,7 +541,7 @@ img{
   margin-bottom: 44px;
 }
 
-.mainfish__title{
+.mainfish__title {
   margin: 0;
   font-family: "TT Travels Next", Arial, sans-serif;
   font-weight: 800;
@@ -543,7 +551,7 @@ img{
   text-transform: uppercase;
 }
 
-.mainfish__nav-btn{
+.mainfish__nav-btn {
   width: 120px;
   height: 60px;
   background: transparent;
@@ -556,7 +564,7 @@ img{
   justify-content: center;
 }
 
-.mainfish__arrow-box{
+.mainfish__arrow-box {
   width: 120px;
   height: 60px;
 
@@ -566,32 +574,32 @@ img{
 }
 
 
-.mainfish__slider-wrap{
+.mainfish__slider-wrap {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.mainfish-card{
+.mainfish-card {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.mainfish-card__num{
+.mainfish-card__num {
   font-family: "TT Backwards Script", Arial, sans-serif;
   font-weight: 700;
-  font-size: 56px;  
+  font-size: 56px;
   line-height: 56px;
   color: #FFDB77;
   margin-bottom: 18px;
 }
 
-.mainfish-card__sub{
+.mainfish-card__sub {
   margin-bottom: 18px;
 }
 
-.mainfish-card__caps{
+.mainfish-card__caps {
   font-family: "TT Travels Next", Arial, sans-serif;
   font-weight: 800;
   font-size: 24px;
@@ -600,16 +608,16 @@ img{
   text-transform: uppercase;
 }
 
-.mainfish-card__script{
+.mainfish-card__script {
   font-family: "TT Backwards Script", Arial, sans-serif;
   font-weight: 700;
-  font-size: 36px;   
+  font-size: 36px;
   line-height: 40px;
   color: #FFDB77;
   margin-top: 4px;
 }
 
-.mainfish-card__text{
+.mainfish-card__text {
   font-family: "HeliosCondC", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -617,14 +625,14 @@ img{
   color: #C4C4C4;
 }
 
-.mainfish-pagination{
+.mainfish-pagination {
   margin-top: 32px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.mainfish-pagination .swiper-pagination-bullet{
+.mainfish-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 4px;
   background: #C4C4C4;
@@ -633,35 +641,32 @@ img{
   margin: 0;
 }
 
-.mainfish-pagination .swiper-pagination-bullet-active{
+.mainfish-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 4px;
   background: #C4C4C4;
 }
 
-.delicacy{
+.delicacy {
   background: transparent;
   padding-top: 60px;
   padding-bottom: 70px;
 }
 
-/* зона фото + оверлей */
-.delicacy__hero{
+.delicacy__hero {
   position: relative;
-  height: 560px;         /* высота “фото-зоны” */
+  height: 560px;
   margin-bottom: 22px;
 }
 
-/* фото по центру */
-.delicacy__img-wrap{
+.delicacy__img-wrap {
   height: 560px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* размер фото задаём контейнером */
-.delicacy__img-box{
+.delicacy__img-box {
   width: 520px;
   height: 560px;
   display: flex;
@@ -669,13 +674,11 @@ img{
   justify-content: center;
   overflow: hidden;
 }
-
-/* заголовок поверх фото по центру */
-.delicacy__title{
+.delicacy__title {
   position: absolute;
   left: 0;
   right: 0;
-  top: 248px;            /* центр по высоте фото, подгони если нужно */
+  top: 248px;
   margin: 0;
 
   text-align: center;
@@ -690,9 +693,9 @@ img{
   z-index: 3;
 }
 
-.delicacy__nav{
+.delicacy__nav {
   position: absolute;
-  top: 244px;            
+  top: 244px;
   width: 120px;
   height: 60px;
 
@@ -708,10 +711,15 @@ img{
   z-index: 4;
 }
 
-.delicacy__nav--prev{ left: 60px; }
-.delicacy__nav--next{ right: 60px; }
+.delicacy__nav--prev {
+  left: 60px;
+}
 
-.delicacy__arrow-box{
+.delicacy__nav--next {
+  right: 60px;
+}
+
+.delicacy__arrow-box {
   width: 120px;
   height: 60px;
   display: flex;
@@ -719,26 +727,26 @@ img{
   justify-content: center;
 }
 
-.delicacy__row{
+.delicacy__row {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 90px;
 }
 
-.delicacy .b-text{
+.delicacy .b-text {
   width: 300px;
   text-align: center;
 }
 
-.delicacy-pagination{
+.delicacy-pagination {
   margin-top: 24px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
 
-.delicacy-pagination .swiper-pagination-bullet{
+.delicacy-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 4px;
   background: #D9D9D9;
@@ -747,8 +755,508 @@ img{
   margin: 0;
 }
 
-.delicacy-pagination .swiper-pagination-bullet-active{
+.delicacy-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 4px;
   background: #91887C;
 }
+
+.products {
+  background: transparent;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.products__head {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 30px;
+}
+
+.products__title {
+  margin: 0;
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  color: #91887C;
+  text-transform: uppercase;
+}
+
+.products__nav {
+  width: 120px;
+  height: 60px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__arrow-box {
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-card__img-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.product-card__img-box {
+  width: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card__img-box--big {
+  width: auto;
+  height: 140px;
+}
+
+.product-card__title {
+  margin-bottom: 14px;
+}
+
+.product-card__caps {
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #91887C;
+  text-transform: uppercase;
+}
+
+.product-card__caps--small {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: none;
+  font-family: "TT Backwards Script", Arial, sans-serif;
+  color: #203370;
+}
+
+.product-card__script {
+  font-family: "TT Backwards Script", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: #203370;
+  margin-top: 2px;
+}
+
+.product-card__text {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #91887C;
+}
+
+.products .swiper-slide {
+  position: relative;
+}
+
+.products .swiper-slide:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -30px;
+
+  width: 18px;
+  height: 340px;
+
+  background-image: url("./images/wave.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products-pagination {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.products-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #D9D9D9;
+  opacity: 1;
+  border-radius: 0;
+  margin: 0;
+}
+
+.products-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 8px;
+  background: #91887C;
+}
+
+.products-swiper .swiper-slide {
+  transition: transform 250ms ease;
+  transform: scale(0.86);
+}
+
+.products-swiper .swiper-slide-active {
+  transform: scale(1);
+}
+
+.products-swiper .product-card__text {
+  display: none;
+}
+
+.products-swiper .swiper-slide-active .product-card__text {
+  display: block;
+  margin-top: 14px;
+}
+
+.products-swiper .product-card__img-box {
+  width: 140px;
+  height: 120px;
+}
+
+.products-swiper .swiper-slide-active .product-card__img-box {
+  width: 220px;
+  height: 180px;
+}
+
+.news {
+  background: transparent;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.news__title {
+  margin: 0 0 34px 0;
+  text-align: center;
+
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #91887C;
+  text-transform: uppercase;
+}
+
+.news__grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.news-card {
+  width: 320px;
+  text-align: center;
+}
+
+.news-card__img-link {
+  display: block;
+  text-decoration: none;
+}
+
+.news-card__img-box {
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.news-card__meta {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.news-card__tag {
+  font-family: "TT Backwards Script", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #203370;
+  text-decoration: none;
+}
+
+.news-card__date {
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #91887C;
+  text-transform: uppercase;
+}
+
+.news-card__title {
+  margin: 14px 0 10px 0;
+
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #91887C;
+  text-transform: uppercase;
+}
+
+.news-card__title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-card__text {
+  margin: 0;
+
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #91887C;
+}
+
+.news__actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.news__btn {
+  width: 180px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FFDB77;
+  border-radius: 24px;
+
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #91887C;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.recipes {
+  background: transparent;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.recipes__pattern {
+  background-image: url("./images/bg_recept.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.recipes__title {
+  margin: 0 0 40px 0;
+  text-align: center;
+
+  font-family: "TT Travels Next", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  color: #91887C;
+  text-transform: uppercase;
+}
+
+.recipes__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 60px;
+  margin-bottom: 40px;
+}
+
+.recipe-card {
+  width: 340px;
+  background: #FFFFFF;
+  border: 1px solid #E8E3DA;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+
+  padding: 14px 14px 16px 14px;
+
+  height: 420px;
+  transition: height 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.recipe-card:hover {
+  height: 560px;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.10);
+}
+
+.recipe-card__img-box {
+  width: 312px;
+  height: 190px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #F6F3ED;
+  border: 1px solid #EFE9DF;
+}
+
+.recipe-card__img-box img {
+  width: 100%;
+  height: auto;
+  max-height: 190px;
+}
+
+.recipe-card__name {
+  display: block;
+  margin-top: 12px;
+
+  font-family: "TT Backwards Script", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #203370;
+  text-decoration: none;
+
+  min-height: 44px;
+}
+.recipe-card__meta {
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.recipe-card__meta-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #91887C;
+}
+.meta-item__icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meta-item__icon img {
+  width: 100%;
+  height: auto;
+  max-height: 16px;
+}
+
+.recipe-card__flag-box {
+  width: 28px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-card__flag-box img {
+  width: 100%;
+  height: auto;
+  max-height: 18px;
+}
+
+.recipe-card__typewriter {
+  margin-top: 16px;
+  border-top: 1px solid #E8E3DA;
+  padding-top: 14px;
+
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 180ms ease, max-height 220ms ease;
+}
+
+.recipe-card:hover .recipe-card__typewriter {
+  opacity: 1;
+  max-height: 180px;
+}
+
+.typewriter__text {
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #91887C;
+
+}
+
+.recipes__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.recipes__btn {
+  width: 180px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #FFDB77;
+  border-radius: 24px;
+
+  font-family: "HeliosCondC", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #91887C;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+
+
