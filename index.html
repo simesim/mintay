@@ -51,29 +51,30 @@
             </div>
           </a>
 
-          <nav class="nav" aria-label="Меню">
+          <nav class="nav" id="siteNav" aria-label="Меню">
             <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav__link" href="#hero">ПОЛЕЗНОСТЬ</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav__link" href="https://двминтай.рф/recipes/">РЕЦЕПТЫ</a>
-              </li>
+              <li class="nav-item"><a class="nav__link" href="#">ПОЛЕЗНОСТЬ</a></li>
+              <li class="nav-item"><a class="nav__link" href="#">РЕЦЕПТЫ</a></li>
 
               <li class="nav-item nav-item--dropdown">
-                <a class="nav__link nav__btn" href="#products">
+                <button class="nav__link nav__btn" type="button" aria-haspopup="true" aria-expanded="false">
                   ПРОДУКЦИЯ
-                </a>
-
+                </button>
 
                 <div class="nav-drop" aria-label="Подменю Продукция">
-                  <a class="nav-drop__link" href="#mainfish">ФАКТЫ</a>
-                  <a class="nav-drop__link" href="https://двминтай.рф/highstandard/">ВЫСШАЯ ПРОБА</a>
+                  <a class="nav-drop__link" href="#">ФАКТЫ</a>
+                  <a class="nav-drop__link" href="#">ВЫСШАЯ ПРОБА</a>
                 </div>
               </li>
             </ul>
           </nav>
+
+          <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-controls="siteNav"
+            aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 
         </div>
       </div>
@@ -624,13 +625,15 @@
           <article class="recipe-card"
             data-type="Минтай под сметанно-горчичным соусом с хлебной крошкой — отличное блюдо для тех, кто ищет быстрый и вкусный способ приготовить рыбу..."
             data-ing="Ингредиенты: Минтай (филе), Сметана 20%, Горчица, Чеснок, Хлеб белый, Растительное масло, Соль, перец, Свежая зелень (укроп или петрушка).">
-            <a class="recipe-card__img-link" href="https://двминтай.рф/recipes/ryba-zapechennaya-pod-smetanno-gorchichnym-sousom-i-hlebnoj-kroshkoj/">
+            <a class="recipe-card__img-link"
+              href="https://двминтай.рф/recipes/ryba-zapechennaya-pod-smetanno-gorchichnym-sousom-i-hlebnoj-kroshkoj/">
               <div class="recipe-card__img-box">
                 <img src="./images/r2.png" alt="Рецепт">
               </div>
             </a>
 
-            <a class="recipe-card__name" href="https://двминтай.рф/recipes/ryba-zapechennaya-pod-smetanno-gorchichnym-sousom-i-hlebnoj-kroshkoj/">
+            <a class="recipe-card__name"
+              href="https://двминтай.рф/recipes/ryba-zapechennaya-pod-smetanno-gorchichnym-sousom-i-hlebnoj-kroshkoj/">
               Рыба, запечённая под сметанно-горчичным соусом и хлебной крошкой
             </a>
 
@@ -663,13 +666,15 @@
           <article class="recipe-card"
             data-type="Запечённый минтай с кабачками, помидорами и моцареллой — простой и вкусный вариант горячего блюда для семейного ужина или обеда..."
             data-ing="Ингредиенты: Филе минтая, Кабачок (средний), Помидоры, Сыр моцарелла, Лук репчатый, Чеснок, Сметана, Оливковое масло, Соль, Перец черный молотый, Свежая зелень (петрушка или укроп).">
-            <a class="recipe-card__img-link" href="https://двминтай.рф/recipes/ryba-zapechennaya-s-kabachkami-pomidorami-i-motsarelloj/">
+            <a class="recipe-card__img-link"
+              href="https://двминтай.рф/recipes/ryba-zapechennaya-s-kabachkami-pomidorami-i-motsarelloj/">
               <div class="recipe-card__img-box">
                 <img src="./images/r3.png" alt="Рецепт">
               </div>
             </a>
 
-            <a class="recipe-card__name" href="https://двминтай.рф/recipes/ryba-zapechennaya-s-kabachkami-pomidorami-i-motsarelloj/">
+            <a class="recipe-card__name"
+              href="https://двминтай.рф/recipes/ryba-zapechennaya-s-kabachkami-pomidorami-i-motsarelloj/">
               Рыба, запечённая с кабачками, помидорами и моцареллой
             </a>
 
@@ -749,13 +754,15 @@
           <article class="recipe-card"
             data-type="Цветная капуста с минтаем под сметанно-томатным соусом – это вкусный и полезный вариант обеда или ужина..."
             data-ing="Ингредиенты: Минтай (филе), Цветная капуста, Лук репчатый, Морковь, Сметана 15%, Томатная паста, Растительное масло, Сыр твердый, Соль, Перец черный молотый, Зелень (укроп, петрушка).">
-            <a class="recipe-card__img-link" href="https://двминтай.рф/recipes/tsvetnaya-kapusta-zapechennaya-s-mintaem-pod-smetanno-tomatnym-sousom/">
+            <a class="recipe-card__img-link"
+              href="https://двминтай.рф/recipes/tsvetnaya-kapusta-zapechennaya-s-mintaem-pod-smetanno-tomatnym-sousom/">
               <div class="recipe-card__img-box">
                 <img src="./images/r5.png" alt="Рецепт">
               </div>
             </a>
 
-            <a class="recipe-card__name" href="https://двминтай.рф/recipes/tsvetnaya-kapusta-zapechennaya-s-mintaem-pod-smetanno-tomatnym-sousom/">
+            <a class="recipe-card__name"
+              href="https://двминтай.рф/recipes/tsvetnaya-kapusta-zapechennaya-s-mintaem-pod-smetanno-tomatnym-sousom/">
               Цветная капуста, запечённая с минтаем под сметанно-томатным соусом
             </a>
 
@@ -1052,7 +1059,8 @@
           </div>
 
           <h3 class="news-card__title">
-            <a class="news-card__title-link" href="https://двминтай.рф/news/delikates-dostupnyy-kazhdomu-ikra-dalnevostochnogo-mintaya/">
+            <a class="news-card__title-link"
+              href="https://двминтай.рф/news/delikates-dostupnyy-kazhdomu-ikra-dalnevostochnogo-mintaya/">
               ДЕЛИКАТЕС, ДОСТУПНЫЙ КАЖДОМУ: ИКРА ДАЛЬНЕВОСТОЧНОГО МИНТАЯ
             </a>
           </h3>
@@ -1074,7 +1082,8 @@
           </a>
 
           <div class="news-card__meta">
-            <a class="news-card__tag" href="https://двминтай.рф/news/dalnevostochnyy-mintay-za-zozh-assotsiatsiya-dobytchikov-mintaya-i-ropniz-obedinyayut-usiliya/">#события</a>
+            <a class="news-card__tag"
+              href="https://двминтай.рф/news/dalnevostochnyy-mintay-za-zozh-assotsiatsiya-dobytchikov-mintaya-i-ropniz-obedinyayut-usiliya/">#события</a>
             <div class="news-card__date">03 ДЕКАБРЯ 2024</div>
           </div>
 
