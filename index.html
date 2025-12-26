@@ -12,99 +12,98 @@
 
 <body>
   <!-- ХЕДЕР -->
-<header class="site-header">
+  <header class="site-header">
 
-  <div class="header-top">
-    <div class="container">
-      <div class="header-top__inner">
-        <div class="header-top__right">
-          <span class="header-top__text">ПРИСОЕДИНЯЙТЕСЬ К НАМ</span>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <div class="header-top__right">
+            <span class="header-top__text">ПРИСОЕДИНЯЙТЕСЬ К НАМ</span>
 
-          <div class="header-top__social">
-            <a class="social-link" href="https://t.me/estmintay" aria-label="Telegram">
-              <div class="icon-box">
-                <img src="./images/telegram.png" alt="Telegram">
-              </div>
-            </a>
+            <div class="header-top__social">
+              <a class="social-link" href="https://t.me/estmintay" aria-label="Telegram">
+                <div class="icon-box">
+                  <img src="./images/telegram.png" alt="Telegram">
+                </div>
+              </a>
 
-            <a class="social-link" href="https://vk.com/diko_mintay" aria-label="VK">
-              <div class="icon-box">
-                <img src="./images/VK.png" alt="VK">
-              </div>
-            </a>
+              <a class="social-link" href="https://vk.com/diko_mintay" aria-label="VK">
+                <div class="icon-box">
+                  <img src="./images/VK.png" alt="VK">
+                </div>
+              </a>
 
-            <a class="social-link" href="https://ok.ru/group/70000003985376" aria-label="OK">
-              <div class="icon-box" style="width: 12px; height: auto;">
-                <img src="./images/odnok.png" alt="OK">
-              </div>
-            </a>
+              <a class="social-link" href="https://ok.ru/group/70000003985376" aria-label="OK">
+                <div class="icon-box" style="width: 12px; height: auto;">
+                  <img src="./images/odnok.png" alt="OK">
+                </div>
+              </a>
+            </div>
+
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__inner">
+          <a class="logo" href="./index.html" aria-label="На главную">
+            <div class="logo-box">
+              <img src="./images/logo.png" alt="Минтай">
+            </div>
+          </a>
+
+          <nav class="nav" id="siteNav" aria-label="Меню">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav__link" href="#">ПОЛЕЗНОСТЬ</a></li>
+              <li class="nav-item"><a class="nav__link" href="#">РЕЦЕПТЫ</a></li>
+
+              <li class="nav-item nav-item--dropdown">
+                <button class="nav__link nav__btn" type="button" aria-haspopup="true" aria-expanded="false">
+                  ПРОДУКЦИЯ
+                </button>
+
+                <div class="nav-drop" aria-label="Подменю Продукция">
+                  <a class="nav-drop__link" href="#">ФАКТЫ</a>
+                  <a class="nav-drop__link" href="#">ВЫСШАЯ ПРОБА</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-controls="mobileMenu"
+            aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
 
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="header-main">
-    <div class="container">
-      <div class="header-main__inner">
-        <a class="logo" href="./index.html" aria-label="На главную">
-          <div class="logo-box">
-            <img src="./images/logo.png" alt="Минтай">
-          </div>
-        </a>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 
-        <nav class="nav" id="siteNav" aria-label="Меню">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav__link" href="#">ПОЛЕЗНОСТЬ</a></li>
-            <li class="nav-item"><a class="nav__link" href="#">РЕЦЕПТЫ</a></li>
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu__inner">
 
-            <li class="nav-item nav-item--dropdown">
-              <button class="nav__link nav__btn" type="button"
-                aria-haspopup="true" aria-expanded="false">
-                ПРОДУКЦИЯ
-              </button>
+        <button class="mobile-menu__close" type="button" id="menuClose" aria-label="Закрыть меню">✕</button>
 
-              <div class="nav-drop" aria-label="Подменю Продукция">
-                <a class="nav-drop__link" href="#">ФАКТЫ</a>
-                <a class="nav-drop__link" href="#">ВЫСШАЯ ПРОБА</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
+        <a class="mobile-menu__link" href="#">ПОЛЕЗНОСТЬ</a>
+        <a class="mobile-menu__link" href="#">РЕЦЕПТЫ</a>
 
-        <button class="burger" id="burger" type="button"
-          aria-label="Открыть меню" aria-controls="mobileMenu" aria-expanded="false">
-          <span></span><span></span><span></span>
+        <button class="mobile-menu__link mobile-menu__dropdown-btn" type="button" id="mobileProductsBtn"
+          aria-expanded="false">
+          ПРОДУКЦИЯ
         </button>
 
+        <div class="mobile-submenu" id="mobileProductsSubmenu">
+          <a class="mobile-menu__sublink" href="#">ФАКТЫ</a>
+          <a class="mobile-menu__sublink" href="#">ВЫСШАЯ ПРОБА</a>
+        </div>
+
       </div>
-    </div>
-  </div>
-
-  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
-
-  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <div class="mobile-menu__inner">
-
-      <button class="mobile-menu__close" type="button" id="menuClose" aria-label="Закрыть меню">✕</button>
-
-      <a class="mobile-menu__link" href="#">ПОЛЕЗНОСТЬ</a>
-      <a class="mobile-menu__link" href="#">РЕЦЕПТЫ</a>
-
-      <button class="mobile-menu__link mobile-menu__dropdown-btn" type="button"
-        id="mobileProductsBtn" aria-expanded="false">
-        ПРОДУКЦИЯ
-      </button>
-
-      <div class="mobile-submenu" id="mobileProductsSubmenu">
-        <a class="mobile-menu__sublink" href="#">ФАКТЫ</a>
-        <a class="mobile-menu__sublink" href="#">ВЫСШАЯ ПРОБА</a>
-      </div>
-
-    </div>
-  </aside>
-</header>
+    </aside>
+  </header>
 
 
   <!-- БАННЕР -->
@@ -329,43 +328,10 @@
                   <div class="mainfish-card__caps">ЛЕГКО</div>
                   <div class="mainfish-card__script">готовить</div>
                 </div>
-                <div class="mainfish-card__text">Текст для 04</div>
-              </div>
-            </div>
-
-            <!-- Карточка 5 -->
-            <div class="swiper-slide">
-              <div class="mainfish-card">
-                <div class="mainfish-card__num">~05~</div>
-                <div class="mainfish-card__sub">
-                  <div class="mainfish-card__caps">ЛЕГКО</div>
-                  <div class="mainfish-card__script">делиться</div>
-                </div>
-                <div class="mainfish-card__text">Текст для 05</div>
-              </div>
-            </div>
-
-            <!-- Карточка 6 -->
-            <div class="swiper-slide">
-              <div class="mainfish-card">
-                <div class="mainfish-card__num">~06~</div>
-                <div class="mainfish-card__sub">
-                  <div class="mainfish-card__caps">ЛЕГКО</div>
-                  <div class="mainfish-card__script">пробовать</div>
-                </div>
-                <div class="mainfish-card__text">Текст для 06</div>
-              </div>
-            </div>
-
-            <!-- Карточка 7 -->
-            <div class="swiper-slide">
-              <div class="mainfish-card">
-                <div class="mainfish-card__num">~07~</div>
-                <div class="mainfish-card__sub">
-                  <div class="mainfish-card__caps">ЛЕГКО</div>
-                  <div class="mainfish-card__script">вдохновляться</div>
-                </div>
-                <div class="mainfish-card__text">Текст для 07</div>
+                <div class="mainfish-card__text">Минтай готовится в считанные минуты,<br>
+                  дарит свободу от долгой готовки<br>
+                  и время для тёплых моментов<br>
+                  с родными за вкусным ужином.</div>
               </div>
             </div>
 
@@ -1188,8 +1154,10 @@
           <div class="footer__contacts-col">
             <div class="footer__line">690091, г. Владивосток,</div>
             <div class="footer__line">ул. Светланская, 51а</div>
-            <a href="tel:+74232224313"></a><div class="footer__line">8 (423) 222-43-13</div></a>
-            <a href="tel:+74232265677"></a><div class="footer__line">8 (423) 226-56-77</div></a>
+            <a href="tel:+74232224313"></a>
+            <div class="footer__line">8 (423) 222-43-13</div></a>
+            <a href="tel:+74232265677"></a>
+            <div class="footer__line">8 (423) 226-56-77</div></a>
           </div>
 
           <div class="footer__contacts-col">
@@ -1202,8 +1170,11 @@
 
       <div class="footer__bottom">
         <div class="footer__copy">© 2025</div>
-        <a class="footer__bottom-link" href="https://двминтай.рф/upload/uf/378/y806y6r9q5ej1f3qgqk8mxfp0mgoq7d6.pdf">СОГЛАСИЕ НА СБОР ФАЙЛОВ COOKIE</a>
-        <a class="footer__bottom-link footer__bottom-link--right" href="https://двминтай.рф/upload/uf/56d/afzzxshgnil2f2rx2f0qymki5r1npzoi.pdf">ПОЛИТИКА ОБРАБОТКИ ДАННЫХ</a>
+        <a class="footer__bottom-link"
+          href="https://двминтай.рф/upload/uf/378/y806y6r9q5ej1f3qgqk8mxfp0mgoq7d6.pdf">СОГЛАСИЕ НА СБОР ФАЙЛОВ
+          COOKIE</a>
+        <a class="footer__bottom-link footer__bottom-link--right"
+          href="https://двминтай.рф/upload/uf/56d/afzzxshgnil2f2rx2f0qymki5r1npzoi.pdf">ПОЛИТИКА ОБРАБОТКИ ДАННЫХ</a>
       </div>
     </div>
   </footer>
