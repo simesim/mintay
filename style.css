@@ -768,7 +768,8 @@ body.menu-open .mobile-menu {
 
 
 .mainfish__slider-wrap {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1635,7 +1636,96 @@ body.menu-open .mobile-menu {
   text-align: center;
 }
 
+
+@media (max-width: 1220px) {
+
+  .container {
+    max-width: 1140px;
+    padding: 0 20px;
+  }
+
+  .nav-list {
+    gap: 40px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: inline-flex;
+  }
+
+  .hero__promo-text {
+    width: 520px;
+  }
+
+  .expedition__title {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .hero__title {
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  .h1-box {
+    width: min(820px, 78vw);
+  }
+
+  .hero__promo-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__promo-text {
+    text-align: center;
+    max-width: 900px;
+  }
+
+  h2,
+  h3,
+  .section-title,
+  .products__title,
+  .recipes__title,
+  .video-block__title,
+  .expedition__title,
+  .mainfish__title,
+  .delicacy__title,
+  .about__title {
+    text-align: center;
+  }
+
+  .expedition,
+  .expedition * {
+    text-align: center;
+  }
+
+  .expedition .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .expedition__inner,
+  .expedition__content,
+  .expedition__card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .video-block__box,
+  .video-box,
+  .video {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    max-height: 520px;
+  }
+
+}
+
 @media (max-width: 992px) {
+
   body.menu-open {
     overflow: hidden;
   }
@@ -1688,37 +1778,7 @@ body.menu-open .mobile-menu {
   .nav-item--open .nav-drop {
     display: flex;
   }
-}
 
-@media (max-width: 1220px) {
-  .container {
-    max-width: 1140px;
-    padding: 0 20px;
-  }
-
-  .nav-list {
-    gap: 40px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .burger {
-    display: inline-flex;
-  }
-
-  .hero__promo-text {
-    width: 520px;
-  }
-
-  .expedition__title {
-    font-size: 44px;
-    line-height: 52px;
-  }
-}
-
-@media (max-width: 992px) {
   .container {
     max-width: 720px;
     padding: 0 20px;
@@ -1796,9 +1856,46 @@ body.menu-open .mobile-menu {
   .recipe-card__img-box {
     width: 292px;
   }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero__title {
+    top: 50%;
+    transform: translateY(-55%);
+  }
+
+  .h1-box {
+    width: min(520px, 86vw);
+  }
+
+  .hero__promo {
+    bottom: 22px;
+  }
+
+  .hero__promo-text {
+    max-width: 90vw;
+    text-align: center;
+  }
+
+  .expedition__layout,
+  .expedition__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-block__box,
+  .video-box,
+  .video {
+    max-height: 360px;
+  }
+
 }
 
 @media (max-width: 576px) {
+
   .container {
     max-width: 360px;
     padding: 0 16px;
@@ -1927,64 +2024,65 @@ body.menu-open .mobile-menu {
   .footer__bottom-link--right {
     text-align: center;
   }
-}
 
-@media (max-width: 1220px) {
-
-  .hero__title {
-    top: 45%;
-    transform: translateY(-50%);
+  /* ЦИФРЫ: блок "Главная рыба России" (чтобы не уезжали за экран) */
+  .mainfish__slider-wrap {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
-  .h1-box {
-    width: min(820px, 78vw);
+  .mainfish-card {
+    min-height: 560px;
+    padding-top: 56px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
-  .hero__promo-inner {
+  .mainfish-card__num {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .mainfish-card__title {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+
+  .products-swiper {
+    overflow: hidden;
+  }
+
+  .products-swiper .swiper-slide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+  }
+
+  .products-swiper .swiper-slide-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .products__head{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .products-swiper{
+    width: 100%;
+  }
+
+  .products-swiper .swiper-slide{
+    display: flex;
     justify-content: center;
-    text-align: center;
   }
 
-  .hero__promo-text {
-    text-align: center;
-    max-width: 900px;
-  }
-
-  h2,
-  h3,
-  .section-title,
-  .products__title,
-  .recipes__title,
-  .video-block__title,
-  .expedition__title,
-  .mainfish__title,
-  .delicacy__title,
-  .about__title {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero__title {
-    top: 50%;
-    transform: translateY(-55%);
-  }
-
-  .h1-box {
-    width: min(520px, 86vw);
-  }
-
-  .hero__promo {
-    bottom: 22px;
-  }
-
-  .hero__promo-text {
-    max-width: 90vw;
-    text-align: center;
-  }
 }
 
 @media (max-width: 480px) {
+
   .hero__title {
     top: 50%;
     transform: translateY(-55%);
@@ -2007,63 +2105,32 @@ body.menu-open .mobile-menu {
     max-width: 92vw;
     line-height: 1.15;
   }
-}
-
-@media (max-width: 1220px) {
-
-  .expedition,
-  .expedition * {
-    text-align: center;
-  }
-
-  .expedition .container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .expedition__inner,
-  .expedition__content,
-  .expedition__card {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .expedition__layout,
-  .expedition__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 1220px) {
-
-  .video-block__box,
-  .video-box,
-  .video {
-    aspect-ratio: 16 / 9;
-    height: auto;
-    max-height: 520px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .video-block__box,
-  .video-box,
-  .video {
-    max-height: 360px;
-  }
-}
-
-@media (max-width: 480px) {
 
   .video-block__box,
   .video-box,
   .video {
     max-height: 260px;
   }
+
+  /* ЦИФРЫ: самый маленький экран */
+  .mainfish-card {
+    min-height: 520px;
+    padding-top: 44px;
+  }
+
+  .mainfish-card__num {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .mainfish-card__title {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .mainfish-card__desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
 }
