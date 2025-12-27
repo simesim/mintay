@@ -92,10 +92,6 @@ img {
   }
 }
 
-/* =========================
-   ХЕДЕР
-========================= */
-
 .header-top {
   height: 44px;
   background: #203370;
@@ -105,7 +101,6 @@ img {
   height: 44px;
   display: flex;
   align-items: center;
-  /* было flex-start */
 }
 
 .header-top__right {
@@ -1936,8 +1931,13 @@ body.menu-open .mobile-menu {
   }
 
   .expedition__title {
+    max-width: 320px;
+    margin: 0 auto;
+    padding:16px;
     font-size: 28px;
-    line-height: 34px;
+    line-height: 1.05;
+    text-align: center;
+
   }
 
   .expedition__btn {
@@ -2025,7 +2025,6 @@ body.menu-open .mobile-menu {
     text-align: center;
   }
 
-  /* ЦИФРЫ: блок "Главная рыба России" (чтобы не уезжали за экран) */
   .mainfish__slider-wrap {
     width: 100%;
     max-width: 100%;
@@ -2065,18 +2064,22 @@ body.menu-open .mobile-menu {
     pointer-events: auto;
   }
 
-  .products__head{
+  .products__head {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .products-swiper{
+  .products-swiper {
     width: 100%;
   }
 
-  .products-swiper .swiper-slide{
+  .products-swiper .swiper-slide {
     display: flex;
     justify-content: center;
+  }
+
+  .hero__promo-text {
+    font-size: 32px;
   }
 
 }

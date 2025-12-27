@@ -158,3 +158,57 @@ const productsSwiper = new Swiper(".products-swiper", {
     });
   });
 })();
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+
+  const burger = document.getElementById("burger");
+  const overlay = document.getElementById("navOverlay");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileClose = document.getElementById("mobileClose");
+
+  const mobileProductsToggle = document.getElementById("mobileProductsToggle");
+  const mobileProductsSub = document.getElementById("mobileProductsSub");
+
+  if (!burger || !overlay || !mobileMenu) return;
+
+  const openMenu = () => {
+    body.classList.add("menu-open");
+    burger.setAttribute("aria-expanded", "true");
+    overlay.setAttribute("aria-hidden", "false");
+  };
+
+  const closeMenu = () => {
+    body.classList.remove("menu-open");
+    burger.setAttribute("aria-expanded", "false");
+    overlay.setAttribute("aria-hidden", "true");
+
+    if (mobileProductsSub) mobileProductsSub.classList.remove("is-open");
+    if (mobileProductsToggle) mobileProductsToggle.setAttribute("aria-expanded", "false");
+  };
+
+  const toggleMenu = () => {
+    body.classList.contains("menu-open") ? closeMenu() : openMenu();
+  };
+
+  burger.addEventListener("click", toggleMenu);
+
+  overlay.addEventListener("click", closeMenu);
+
+  if (mobileClose) mobileClose.addEventListener("click", closeMenu);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && body.classList.contains("menu-open")) closeMenu();
+  });
+
+  mobileMenu.addEventListener("click", (e) => {
+    const link = e.target.closest("a");
+    if (link) closeMenu();
+  });
+
+  if (mobileProductsToggle && mobileProductsSub) {
+    mobileProductsToggle.addEventListener("click", () => {
+      const isOpen = mobileProductsSub.classList.toggle("is-open");
+      mobileProductsToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+});
