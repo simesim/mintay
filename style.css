@@ -63,6 +63,10 @@ img {
   max-width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 .container {
   padding: 0 20px;
   margin-left: auto;
@@ -579,7 +583,7 @@ body.menu-open .mobile-menu {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
 }
 
 /* Пагинация Swiper (общие) */
@@ -1517,7 +1521,9 @@ body.menu-open .mobile-menu {
   font-size: 14px;
   line-height: 20px;
   color: #91887C;
+  
 }
+
 
 .footer__bottom {
   margin-top: 44px;
@@ -1933,7 +1939,7 @@ body.menu-open .mobile-menu {
   .expedition__title {
     max-width: 320px;
     margin: 0 auto;
-    padding:16px;
+    padding: 16px;
     font-size: 28px;
     line-height: 1.05;
     text-align: center;
