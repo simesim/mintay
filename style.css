@@ -63,7 +63,7 @@ img {
   max-width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -1022,19 +1022,33 @@ body.menu-open .mobile-menu {
   position: relative;
 }
 
-.products .swiper-slide:not(:last-child)::after {
+.products .products-swiper .swiper-slide::before,
+.products .products-swiper .swiper-slide::after {
+  content: none;
+}
+
+.products .products-swiper .swiper-slide-prev::after {
   content: "";
   position: absolute;
   top: 30px;
-  right: -30px;
-
-  width: 18px;
-  height: 340px;
-
-  background-image: url("./images/wave.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  right: -40px;
+  width: 25px;
+  height: 450px;
+  background: url("./images/wave.png") no-repeat center / contain;
+  pointer-events: none;
 }
+
+.products .products-swiper .swiper-slide-next::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  width: 25px;
+  height: 450px;
+  background: url("./images/wave.png") no-repeat center / contain;
+  pointer-events: none;
+}
+
 
 .products-pagination {
   margin-top: 28px;
@@ -1521,7 +1535,7 @@ body.menu-open .mobile-menu {
   font-size: 14px;
   line-height: 20px;
   color: #91887C;
-  
+
 }
 
 
