@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const t = slide.getAttribute("data-title") || "";
         if (titleEl) titleEl.textContent = t;
 
-        const bg = slide.style.backgroundImage; 
+        const bg = slide.style.backgroundImage;
         if (heroBanner && bg) heroBanner.style.backgroundImage = bg;
     }
 
@@ -99,7 +99,8 @@ const productsSwiper = new Swiper(".products-swiper", {
     spaceBetween: 80,
     speed: 450,
     loop: true,
-
+    roundLengths: true,        
+    watchSlidesProgress: true,
     navigation: {
         prevEl: ".products__nav--prev",
         nextEl: ".products__nav--next",
