@@ -2227,7 +2227,7 @@ body.menu-open .mobile-menu {
 @media (max-width: 480px) {
 
   .hero__title {
-    top: 50%;
+    top: 40%;
     transform: translateY(-55%);
   }
 
@@ -2240,7 +2240,7 @@ body.menu-open .mobile-menu {
   }
 
   .hero__promo-inner {
-    gap: 14px;
+    gap: 12px;
   }
 
   .hero__promo-text {
@@ -2255,25 +2255,39 @@ body.menu-open .mobile-menu {
     max-height: 260px;
   }
 
-  /* ЦИФРЫ: самый маленький экран */
+  .hero__arrow {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero__arrow .arrow-box {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero__arrow img {
+    height: auto;
+    display: block;
+  }
+
   .mainfish-card {
-    min-height: 520px;
-    padding-top: 44px;
+    min-height: 220px;
+    padding: 34px 20px 22px;
   }
 
-  .mainfish-card__num {
-    font-size: 60px;
-    line-height: 60px;
+  .mainfish {
+    padding-top: 46px;
+    padding-bottom: 30px;
   }
 
-  .mainfish-card__title {
-    font-size: 38px;
-    line-height: 38px;
+
+  .mainfish__title {
+    margin-bottom: 16px;
   }
 
-  .mainfish-card__desc {
-    font-size: 14px;
-    line-height: 20px;
+  .mainfish__num {
+    margin: 18px 0 14px;
   }
 
 }
